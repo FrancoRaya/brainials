@@ -1,0 +1,1493 @@
+/* AJUSTES GLOBALES */
+* {
+    color: #212032;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    border: #fd3d38 solid 1px;
+}
+
+
+h1 , h2 , h3 , h4 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 900;
+    background: none;
+}
+
+
+p , li , a , form , input, q , button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.17em;
+    background: none;
+    text-decoration: none;
+}
+
+
+i , img {
+    background: none;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 { 
+    font-size: 2em;
+}
+
+h4 { 
+    font-size: 1.4em;
+}
+
+/* DIVISORES DE TEXTO-TÍTULO */
+.divisor1 {
+    display: inline-block;
+    height: 2px;
+    width: 100px;
+    margin: 15px 0px 30px 0px ;
+    background-color: #fd3d38;
+}
+
+.divisor2 {
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+    margin: 15px 0px 30px 0px ;
+    background-color: #fd3d38;
+}
+
+.divisor3 {
+    height: 2px;
+    width: 100px;
+    margin: 15px 0px 30px 0px ;
+    background-color: #fd3d38;
+}
+
+.divisor4 {
+    display: inline-block;
+    height: 1px;
+    width: 70px;
+    margin: 15px 0px;
+    background-color: #212032;
+}
+
+.divisor5 {
+    height: 170px;
+    width: 4px;
+    background-color: #fd3d38;
+}
+/* FIN DIVISORES DE TEXTO-TÍTULO */
+
+/* BOTONES */
+.boton1 {
+    padding: 15px 25px;
+    margin: 50px 0;
+    border-radius: 3px;
+    background-color: #fd3d38;
+    border: 3px solid #fd3d38;
+}
+
+.boton1:hover {
+    transform: scale(1.2,1.2);
+    transition: 1s;
+    background-color: #f5f5f5;
+    box-shadow:  0px 0px 40px #bebebe;
+}
+
+.boton1 a {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #ffff;
+    letter-spacing: 2px;
+}
+
+.boton1:hover a {
+    color: #fd3d38;
+}
+
+.boton2 {
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+    background-color: #ffff;
+    border: none;
+}
+
+.boton2:hover {
+    transform: scale(1.2,1.2);
+    transition: 1s;
+    box-shadow:  0px 0px 20px #313131;
+}
+
+.boton2 a {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #fd3d38;
+    letter-spacing: 2px;
+}
+
+.boton3 {
+    margin: 50px 0 0 0;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: none;
+}
+
+.boton3:hover {
+    transform: scale(1.2,1.2);
+    transition: 1s;
+}
+
+.boton3 a {
+    color: #fd3d38;
+}
+
+.boton4 {
+    padding: 8px 20px;
+    margin: 20px 0 0 0;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    color: white;
+    background-color: #fd3d38;
+    border: #fd3d38 solid 2px;
+    border: none;
+}
+
+.boton4:hover {
+    transform: scale(1.2,1.2);
+    border: #fd3d38 solid 3px;
+    transition: 1s;
+    box-shadow:  0px 0px 40px #bebebe;
+}
+
+.boton5 {
+    margin: 0 0 20px 0;
+}
+
+.boton5 a{
+    text-decoration: none;
+    background: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fd3d38;
+}
+
+.boton6 {
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 3px;
+    background-color: #fd3d38;
+    border: 3px solid #fd3d38;
+}
+
+.boton6:hover {
+    transform: scale(1.2,1.2);
+    transition: 1s;
+    background-color: #f5f5f5;
+    box-shadow:  0px 0px 40px #bebebe;
+}
+
+.boton6 a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffff;
+    letter-spacing: 2px;
+}
+
+.boton6:hover a {
+    color: #fd3d38;
+}
+/* FIN BOTONES */
+
+body {
+    width: 100%;
+    overflow-x:hidden;
+}
+
+.headerNav {
+    padding: 20px 50px;
+}
+
+.headerNavIcon {
+    border: none;
+    background-image: #fd3d38;
+}
+
+.headerNavLink {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+
+.headerNavLink:hover {
+    color: #fd3d38;
+}
+
+nav a {
+    color: #212032;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #0F0F18;
+    padding: 30px 100px;
+}
+
+.footer p {
+    font-size: 3em;
+    font-weight: 800;
+    color: white;
+}
+
+.footerRedessociales{
+    display: flex;
+    justify-content: flex-end;
+    background: none;
+    width: 100%;
+}
+
+.footerRedessociales a {
+    margin: 0 0 0 15px;
+}
+/* FIN FOOTER */
+
+/* AJUSTES RESPONSIVE */
+@media (max-width:768px) {
+    nav {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width:480px) {
+    .headerNav {
+        padding: 20px;
+    }
+
+    .headerNavLogo {
+        height: auto;
+        width: 70%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footerRedessociales {
+        justify-content: center;
+    }
+
+    .footerRedessociales a {
+        margin: 10px;
+    }
+}
+/* FIN AJUSTES RESPONSIVE */
+/* FIN AJUSTES GLOBALES */
+
+
+
+
+
+/* HOME */
+/* HEADER */
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #f5f5f5;
+    height: 900px;
+    padding: 100px;
+}
+
+.section1Div1 {
+    height: auto;
+    width: 43%;
+    background: none;
+}
+
+.section1Imagen {
+    margin: 0 0 0 10%;
+}
+
+.divisor {
+    height: 4px;
+    width: 300px;
+    margin: 15px 0px 30px 0px ;
+    background-color: #fd3d38;
+}
+
+.section1Div3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 100px 0 0;
+}
+
+.section1Div3 a {
+    margin: 0 0 0 15px;
+}
+/* FIN HEADER */
+
+
+/* PRODUCTOS DE LA TIENDA */
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.section2Div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10% 0 0 0;
+}
+
+.section2DivProducto {
+    position: relative;
+    height: 31em;
+    width: 20em;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 0 0 50px 0;
+    background: #fd3d38;
+    box-shadow:  20px 20px 60px #bebebe;
+}
+
+.section2DivProducto i {
+    color: white;
+    background:none;
+    margin: 7px;
+}
+
+.section2DivProducto h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 7px;
+}
+
+.section2DivProducto p {
+    color: white;
+    margin: 7px;
+}
+
+
+.section2DivProductoImg {
+    position: absolute;
+    transform: translate(-50%,-40%);
+    max-height: 100%;
+    max-width: 85%;
+    background: none;
+}
+
+.section2DivProductoInfo {
+    position: absolute;
+    transform: translate(-10%,110%);
+    background: none;
+}
+/* FIN PRODUCTOS DE LA TIENDA */
+
+
+/* PROPÓSITO */
+.section3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: #0F0F18;
+}
+.section3 h2 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+.section3 i {
+    color: white;
+    background:none;
+}
+
+.section3 p {
+    color: white;
+}
+.section3Image {
+    max-height: 30%;
+    max-width: 30%;
+    margin: 50px 0 0 0;
+    background: none;
+}
+/* FIN PROPÓSITO */
+
+
+/* CANAL YOUTUBE */
+.section4 {
+    display: flex;
+    padding: 100px
+}
+/* FIN CANAL YOUTUBE */
+
+
+/* EQUIPO BRAINIALS */
+.section5 {
+    text-align: center;
+    padding: 100px;
+}
+
+.section5Div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.section5DivEquipo {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25rem;
+    width: 19rem;
+    margin: 10px;
+    padding: 40px;
+    box-shadow:  20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+    border-radius: 0 0 50px 0;
+}
+
+.section5DivImg {
+    width: 150px;
+    height: 150px;
+}
+
+.section5DivEquipo h4{
+    font-size: 1.4em;
+    margin: 4px 0;
+}
+
+.section5DivEquipo p {
+    margin: 4px 0;
+}
+
+.section5DivEquipo button {
+    border: none;
+    background: none;
+}
+/* FIN EQUIPO BRAINIALS */
+
+
+/* FORMULARIO DE CONTACTO */
+.section6 {
+    display: flex;
+    padding: 100px;
+}
+
+.section6Contactos {
+    margin: 0 100px 0 0;
+    width: 35em;
+    justify-content: space-evenly;
+}
+
+.section6Contactos p {
+    font-weight: 600;
+}
+
+.section6Formulario {
+    text-align: center;
+    width: 45%;
+    padding: 50px;
+    box-shadow:  20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+    border-radius: 0 0 70px 0;
+}
+
+.section6Formulario form{
+    text-align: left;
+}
+
+.section6Formulario h4 {
+    font-size: 1.7em;
+}
+/* FIN FORMULARIO DE CONTACTO */
+
+
+/* AJUSTES HOME MOBILE */
+@media (max-width:1024px) {
+    .section2DivProducto {
+        height: 31em;
+        width: 18em;
+    }
+
+    .section4 {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:768px) {
+    .section1 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0 0 0;
+        padding: 200px 100px;
+    }
+
+    .section1Imagen {
+        align-items: center;
+        height: 70%;
+        width: 70%;
+        margin: 0;
+    }
+
+    .section1Div1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .divisor {
+        width: 34%;
+        margin: 20px auto;
+    }
+
+    .section1Div3 {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .section1Div3 a {
+        margin: 0 10px;
+    }
+
+    .section2Div {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .section2DivProducto {
+        margin: 100px 0;
+    }
+
+    .section3 {
+        display: flex;
+        text-align: center;
+    }
+
+    .section4 {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+    .divisor3 {
+        display: inline-block;
+    }
+    .section5Div {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .section6 {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        padding: 100px;
+    }
+
+    .section6Contactos {
+        text-align: center;
+        margin: 0 0 50px 0;
+        width: 100%;
+    }
+
+    .section6Formulario {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:480px) {
+    .section1 {
+        padding: 100px 25px;
+    }
+
+    .section1Div1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .section1 h1 {
+        font-size: 2.3em;
+    }
+
+    .section1Div3 {
+        padding: 25px;
+    }
+
+    .section2 {
+        padding: 25px;
+    }
+
+    .section2DivProducto {
+        margin: 100px 0;
+    }
+
+    .section2DivProductoInfo {
+        height: 12em;
+        width: 17.5em;
+    }
+
+    .section3 {
+        padding: 25px;
+    }
+
+    .section3 h2 {
+        font-size: 2.1em;
+    }
+
+    .section4 {
+        padding: 100px 25px;
+    }
+
+    .section4Video {
+        width: 100%;
+    }
+
+    .section5 {
+        padding: 25px;
+    }
+
+    .section5DivEquipo {
+        padding: 15px;
+        height: 22rem;
+        width: 15rem;
+    }
+
+    .section5DivEquipo h4 {
+        font-size: 1.3em;
+    }
+
+    .section5DivEquipo p {
+        font-size: 1em;
+    }
+
+    .section6 {
+        padding: 40px;
+    }
+
+    .section6Contactos {
+        width: 100%;
+    }
+
+    .section6Formulario {
+        padding: 25px;
+        width: 100%;
+    }
+}
+/* FIN AJUSTES HOME MOBILE */
+/* FIN HOME */
+
+
+
+
+
+/* PÁGINA APOYAR */
+/* HEADER */
+    .apoyar__Section1 {
+        text-align: center;
+        padding: 200px 20% 20px;
+    }
+/* FIN HEADER */
+
+
+/* PORQUÉ APOYAR */
+    .apoyar__Section2 {
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 100px;
+    }
+
+    .apoyar__Section2--Caja {
+        text-align: center;
+        background-color: #fd3d38;
+        margin: 15px;
+        padding: 30px;
+        width: 28%;
+        height: auto;
+        border-radius: 0 0 60px 0;
+        box-shadow:  20px 20px 60px #bebebe;
+    }
+
+    .apoyar__Section2--Caja h3 {
+        color: white;
+    }
+
+    .apoyar__Section2--Caja p {
+        color: white;
+    }
+/* FIN PORQUÉ APOYAR */
+
+
+/* CLUB BRAINAIALS */
+    .apoyar__Section3 {
+        display: flex;
+        flex-flow: column;
+        justify-items: center;
+        align-items: center;
+        padding: 100px 200px;
+        text-align: center;
+        background-color: #0F0F18;
+        color: white;
+    }
+
+    .apoyar__Section3--titulo {
+        color: white;
+    }
+
+    .apoyar__Section3--texto {
+        color: white;
+        width: 65%;
+    }
+
+    .apoyar__Section3__Club {
+        text-align: center;
+        background-color: #fd3d38;
+        padding: 25px;
+        width: 400px;
+        height: 28em;
+        border-radius: 0 0 80px 0;
+        box-shadow:  20px 20px 60px #212032;
+    }
+
+    .apoyar__Section3__Club--Titulo {
+        font-style: italic;
+        color: white;
+    }
+
+    .apoyar__Section3__Club--Texto {
+        font-size: 3em;
+        font-weight: 800;
+        color: white;
+    }
+
+    .apoyar__Section3__Club--Lista {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center; 
+        background: none;
+        padding: 0 0 20px 0;
+    }
+
+    .apoyar__Section3__Club--Lista p {
+        display: block;
+        text-align: left;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .apoyar__Section3--Beneficios {
+        align-items: center;
+        background-color: #0F0F18;
+        padding: 50px;
+    }
+
+    .apoyar__Section3--Beneficios ul {
+        background: none;
+    }
+
+    .apoyar__Section3--Beneficios li {
+        color: white;
+    }
+/* FIN CLUB BRAINAIALS */
+
+
+/* OTRAS FORMAS DE APOYAR */
+    .apoyar__Section4 {
+        display: flex;
+        padding: 100px;
+    }
+
+    .apoyar__Section4 p {
+        color: #212032;
+    }
+
+    .apoyar_Section4--acordion {
+        box-shadow:  20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    }
+
+    .apoyar_Section4--Button {
+        font-weight: 700;
+        font-size: 0.3em;
+        color: #212032;
+        background-color: white;
+    }
+
+    .apoyar_Section4--Item {
+        background-color: white;
+    }
+/* FIN OTRAS FORMAS DE APOYAR */
+
+
+/* AJUSTES APOYAR MOBILE */
+@media (max-width: 768px) {
+    .apoyar__Section1 {
+        padding: 200px 100px 50px;
+    }
+
+    .apoyar__Section2 {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+    }
+
+    .apoyar__Section2--Caja {
+        width: 70%;
+    }
+
+    .apoyar__Section3 {
+        padding: 100px;
+    }
+
+    .apoyar__Section3--texto {
+        width: 100%;
+    }
+
+    .apoyar__Section3__Club {
+        width: 350px;
+    }
+
+    .apoyar__Section3__Club--Lista p {
+        font-size: 1em;
+    }
+
+    .apoyar__Section4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apoyar__Section4--Caja {
+        margin: 0 0 50px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .apoyar__Section1 {
+        padding: 150px 25px 0;
+    }
+
+    .apoyar__Section1 h1 {
+        font-size: 2.5em;
+    }
+
+    .apoyar__Section2 {
+        display: flex;
+        flex-flow: column;
+        padding: 25px;
+    }
+
+    .apoyar__Section2--Caja {
+        width: fit-content;
+    }
+
+    .apoyar__Section3 {
+        padding: 25px;
+    }
+
+    .apoyar__Section3 h2 {
+        font-size: 2em;
+        padding: 0 50px;
+    }
+
+    .apoyar__Section3 h3 {
+        font-size: 1.5em;
+        padding: 0 50px;
+    }
+
+    .apoyar__Section3__Club {
+        width: fit-content;
+    }
+
+
+    .apoyar__Section3__Club--Lista p {
+        font-size: 1em;
+    }
+
+    .apoyar__Section3--Beneficios {
+        padding: 0;
+        margin: 40px 0;
+    }
+
+    .apoyar__Section4 {
+        padding: 25px 25px 75px;
+
+    }
+
+    .apoyar__Section4 h2 {
+        font-size: 2em;
+    }
+}
+/* FIN AJUSTES APOYAR MOBILE */
+/* FIN PÁGINA APOYAR */
+
+
+
+
+
+/* PÁGINA E-BOOK */
+/* HEADER */
+.ebooksSection1 {
+    text-align: center;
+    padding: 200px 100px 0;
+}
+/* FIN HEADER */
+
+
+/* PRODUCTOS */
+.ebooksSection2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.ebooksSection2Producto {
+    display: flex;
+    flex-flow: column wrap ;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.ebooksSection2Producto h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.ebooksSection2Producto p {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.ebooksSection2Image {
+    height: auto;
+    width: 75%;
+}
+/* FIN PRODUCTOS */
+
+
+/* OFERTAS */
+.ebooksSection3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    background-color: #0F0F18;
+}
+
+.ebooksSection3 h2 {
+    color: white;
+}
+
+.ebooksSection3Oferta {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 40em;
+    width: 60em;
+    background-color: #0F0F18;
+}
+
+.ebooksSection3Oferta img {
+    width: 50%;
+    height: auto;
+}
+
+.ebooksSection3Oferta h3 {
+    color: white;
+}
+
+.ebooksSection3Oferta div {
+    display: flex;
+    background-color: #0F0F18;
+    padding: 0;
+}
+
+.ebooksSection3Rebaja {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    justify-content: center;
+    padding: 15px;
+    margin: 0;
+    color: white;
+    background-color: #0F0F18;
+}
+
+.ebooksSection3Precio {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 15px;
+    margin: 0;
+    color: white;
+    background-color: #0F0F18;
+}
+/* FIN OFERTAS */
+
+/* SOBRE LOS EBOOKS */
+.ebooksSection4 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.ebooksSection4Caja {
+    width: 30em;
+    background: none;
+    text-align: left;
+}
+
+.ebooksSection4Img {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+}
+
+.ebooksSection4Img img {
+    width: 55%;
+    height: auto;
+}
+/* FIN SOBRE LOS EBOOKS */
+
+/* BENEFICIOS */
+.ebooksSection5 {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+.ebooksSection5Beneficio {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+}
+/* FIN BENEFICIOS */
+
+/* CONTACTOS */
+.ebooksContactos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 100px;
+}
+
+.ebooksContactosRedes{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+/* FIN CONTACTOS */
+
+
+/* AJUSTES MOBILE */
+@media (max-width: 768px) {
+    .ebooksSection1 {
+        width: auto;
+    }
+
+    .ebooksSection2 {
+        width: auto;
+        display: flex;
+        flex-flow: column;
+        padding: 100px;
+    }
+
+    .ebooksSection2Producto {
+        width: auto;
+        margin: 50px;
+    }
+
+    .ebooksSection2Producto h3 {
+        font-size: 2.3em;
+    }
+
+    .ebooksSection2Producto p {
+        font-size: 1.8em;
+    }
+
+    .ebooksSection3Oferta {
+        width: auto;
+    }
+
+    .ebooksSection3Oferta img {
+        width: 75%;
+        height: auto;
+    }
+
+    .ebooksSection4 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .ebooksSection4Caja {
+        text-align: center;
+        width: fit-content;
+    }
+
+    .ebooksSection5 {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .ebooksSection5Beneficio {
+        width: fit-content;
+    }
+
+    .divisor5 {
+        transform: rotate(90deg);
+    }
+
+    .ebooksContactos {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .ebooksContactos {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width:480px) {
+    .ebooksSection1 {
+        padding: 150px 25px 0;
+    }
+
+    .ebooksSection2 {
+        padding: 25px;
+    }
+
+    .ebooksSection2Producto {
+        width: fit-content;
+        margin: 0 0 50px;
+    }
+
+    .ebooksSection2Producto h3 {
+        font-size: 1.7em;
+    }
+
+    .ebooksSection2Producto p {
+        font-size: 1.4em;
+    }
+
+    .ebooksSection3 {
+        padding: 25px;
+    }
+
+    .ebooksSection4 {
+        padding: 100px 25px;
+    }
+
+    .ebooksSection5 {
+        padding: 25px;
+    }
+}
+/* FIN AJUSTES MOBILE */
+/* FIN PÁGINA E-BOOK */
+
+
+
+
+
+/* PÁGINA NUESTRA INICIATIVA */
+/* HEADER */
+.nuestrainiciativaSection1{
+    text-align: center;
+    padding: 200px 100px 0;
+}
+/* FIN HEADER */
+
+
+/* SOBRE NOSOTROS */
+.nuestrainiciativaSection2 {
+    padding: 100px 200px;
+}
+
+.nuestrainiciativaSection2 div {
+    display: flex;
+    justify-content: center;
+}
+
+.nuestrainiciativaSection2 p {
+    line-height: 2rem;
+    margin: 10px 0 40px;
+}
+
+.nuestrainiciativaSection2 Img {
+    width: 25%;
+    height: auto;
+    margin: 15px;
+}
+/* FIN SOBRE NOSOTROS */
+
+
+/* BANNER */
+.nuestrainiciativaBanner {
+    display: flex;
+    justify-content: center;
+    padding: 50px 100px ;
+    background-color: #0F0F18;
+}
+
+.nuestrainiciativaBannerCaja {
+    background-color: #0F0F18;
+}
+
+.nuestrainiciativaBannerBoton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 50px;
+    background-color: #0F0F18;
+}
+
+.nuestrainiciativaBanner h3{
+    color: white;
+}
+
+.nuestrainiciativaBanner p{
+    color: white;
+}
+/* FIN BANNER */
+
+
+/* EQUIPO */
+.nuestrainiciativaSection4 {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 100px;
+}
+
+.nuestrainiciativaSection4Caja {
+    display: flex;
+    padding: 100px;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.nuestrainiciativaSection4CajaEquipo {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 40%;
+    margin: 30px;
+    padding: 40px;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    border-radius: 0 0 60px 0;
+}
+
+.nuestrainiciativaSection4Caja img {
+    width: 40%;
+    height: auto;
+}
+
+.nuestrainiciativaSection4CajaEquipo q {
+    display: inline-block;
+    text-align: left;
+}
+/* FIN EQUIPO */
+
+/* BANNER 1 */
+.nuestrainiciativaBanner1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 100px ;
+    background-color: #0F0F18;
+}
+
+.nuestrainiciativaBanner1 h3{
+    color: white;
+    margin: 0 30px 0 0;
+}
+
+.nuestrainiciativaBanner1 div {
+    background-color: #0F0F18;
+}
+/* FIN BANNER 1 */
+/* OTRAS FORMAS DE APOYAR */
+.nuestrainiciativaSection5 {
+    display: inline-block;
+    text-align: center;
+    padding: 100px;
+}
+/* FIN OTRAS FORMAS DE APOYAR */
+
+/* AJUSTES MOBILE */
+@media (max-width: 768px) {
+    .nuestrainiciativaSection2 {
+        padding: 100px;
+    }
+    
+    .nuestrainiciativaBanner {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .nuestrainiciativaBannerBoton {
+        margin: 0;
+    }
+
+    .nuestrainiciativaSection4Caja {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .nuestrainiciativaSection4CajaEquipo {
+        width: fit-content;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .nuestrainiciativaSection1 {
+        padding: 150px 25px 0;
+    }
+
+    .nuestrainiciativaSection2 {
+        padding: 25px;
+    }
+
+    .nuestrainiciativaBanner {
+        padding: 25px;
+    }
+
+    .nuestrainiciativaBanner1 {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .nuestrainiciativaBanner1 h3 {
+        margin: 0;
+    }
+
+    .nuestrainiciativaSection4 {
+        padding: 25px;
+    }
+
+    .nuestrainiciativaSection4Caja {
+        padding: 0;
+    }
+}
+/* FIN AJUSTES MOBILE */
+/* FIN PÁGINA NUESTRA INICIATIVA */
+
+
+
+
+
+/* HABLAMOS */
+.hablamosSection {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px 100px;
+}
+
+.hablamosSectionCaja {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    padding: 30px;
+}
+
+.hablamosSectionCaja h1 {
+    font-size: 2em;
+}
+
+.hablamosSectionFormulario {
+    text-align: center;
+    width: 45%;
+    padding: 50px;
+    margin: 0 0 0 20px;
+    border-radius: 0 0 70px 0;
+    box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+}
+
+.hablamosSectionFormulario form {
+    text-align: left;
+}
+
+/* AJUSTES MOBILE */
+@media (max-width: 768px) {
+    .hablamosSection {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .hablamosSectionCaja {
+        width: fit-content;
+    }
+
+    .hablamosSectionFormulario {
+        flex-flow: column;
+        width: 100%;
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hablamosSection {
+        padding: 150px 25px 50px;
+    }
+
+    .hablamosSectionFormulario {
+        padding: 30px;
+    }
+}
+/* FIN AJUSTES MOBILE */
+/* FIN HABLAMOS */
