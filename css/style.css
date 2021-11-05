@@ -1491,3 +1491,23 @@ nav a {
 }
 /* FIN AJUSTES MOBILE */
 /* FIN HABLAMOS */
+
+
+
+
+
+/* 404 */
+.Section404 {
+    text-align: center;
+    padding: 200px 100px 100px;
+}
+
+/* AJUSTE MOBILE */
+@media (max-width: 480px) {
+    .Section404 {
+        padding: 150px 25px 50px;
+    }
+}
+
+/* FIN AJUSTE MOBILE */
+/* FIN 404 */
