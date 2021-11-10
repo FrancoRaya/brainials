@@ -14,6 +14,12 @@
         background: none;
     }
 
+    p , li , a , form , input, q , button {
+        font-family: 'Poppins', sans-serif;
+        background: none;
+        text-decoration: none;
+    }
+
     h1 {
         font-size: map-get($map: $tamaño-fuente, $key: titulo1);
     }
@@ -30,10 +36,48 @@
         font-size: map-get($map: $tamaño-fuente, $key: titulo4);
     }
 
-    p {
+    p , li , a , form , input, q , button {
         font-size: map-get($map: $tamaño-fuente, $key: texto);
     }
 }
+
+
+
+/* DIVISORES DE TEXTO-TÍTULO */
+.divisor1 {    
+    display: inline-block;
+    height: 2px;
+    @extend %divisor-width-margin;
+    background-color: $color-princial;
+}
+
+.divisor2 {
+    display: inline-block;
+    height: 4px;
+    @extend %divisor-width-margin;
+    background-color: $color-princial;
+}
+
+.divisor3 {
+    height: 2px;
+    @extend %divisor-width-margin;
+    background-color: $color-princial;
+}
+
+.divisor4 {
+    display: inline-block;
+    height: 1px;
+    width: 70px;
+    margin: 7px 0px;
+    background-color: $color-terciario;
+}
+
+.divisor5 {
+    height: 170px;
+    width: 10px;
+    background-color: $color-princial;
+}
+/* FIN DIVISORES DE TEXTO-TÍTULO */
 /* FIN AJUSTES GLOBALES */
 
 
