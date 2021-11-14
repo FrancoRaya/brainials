@@ -42,7 +42,6 @@
 }
 
 
-
 /* DIVISORES DE TEXTO-TÍTULO */
 .divisor1 {    
     display: inline-block;
@@ -78,6 +77,101 @@
     background-color: $color-princial;
 }
 /* FIN DIVISORES DE TEXTO-TÍTULO */
+
+
+/* BOTONES */
+.boton1 {
+    padding: 15px 25px;
+    margin: 50px 0;
+    border: 3px solid $color-princial;
+
+    &:hover {
+        @extend %scale-boton;
+        background-color: $color-secundario;
+        box-shadow:  0px 0px 40px #bebebe;
+    }
+    
+    & a {
+        @extend %font-boton;
+        font-size: 1.3em;
+        color: $color-cuarto;
+    }
+}
+
+.boton2 {
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
+    border-radius: $border-radius-boton;
+    background-color: $color-cuarto;
+    border: none;
+
+    &:hover {
+        @extend %scale-boton;
+        box-shadow:  0px 0px 20px #313131;
+    }
+    
+    & a {
+        @extend %font-boton;
+        font-size: 1.1em;
+        color: $color-princial;
+    }
+}
+
+.boton3 {
+    margin: 50px 0 0 0;
+    border: none;
+
+    & a {
+        @extend %font-boton;
+        font-size: 1.2em;
+        color: $color-princial;
+    }
+}
+
+.boton4 {
+    @extend %font-boton;
+    padding: 8px 20px;
+    margin: 20px 0 0 0;
+    font-size: 1.1em;
+    border-radius: $border-radius-boton;
+    color: $color-cuarto;
+    background-color: $color-princial;
+    border: $color-princial solid 2px;
+
+    &:hover {
+        @extend %scale-boton;
+        border: $color-princial solid 3px;
+        box-shadow:  0px 0px 40px #bebebe;
+    }
+}
+
+.boton5 {
+    margin: 10px 0;
+
+    & a{
+        @extend %font-boton;
+        font-size: 1em;
+        color: $color-princial;
+    }
+}
+
+.boton6:hover {
+    @extend %scale-boton;
+    background-color: $color-secundario;
+    box-shadow:  0px 0px 40px #bebebe;
+
+    & a {
+        @extend %font-boton;
+        font-size: 1.2em;
+        color: $color-cuarto;
+    }
+    
+    &:hover a {
+        color: $color-princial;
+    }
+}
+/* FIN BOTONES */
+
 /* FIN AJUSTES GLOBALES */
 
 
@@ -140,3 +234,5 @@
 }
 /* FIN PROPÓSITO */
 /* FIN HOME */
+
+

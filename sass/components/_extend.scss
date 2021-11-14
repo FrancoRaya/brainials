@@ -17,3 +17,13 @@
     width: 100px;
     margin: 30px 0px;
 }
+
+%scale-boton {
+    transform: scale(1.2,1.2);
+    transition: 1s;
+}
+
+%font-boton {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
