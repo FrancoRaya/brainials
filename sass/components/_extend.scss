@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+%flexbox-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 %flexbox-column {
     display: flex;
     flex-flow: column wrap;
@@ -27,5 +32,4 @@
 %font-boton {
     font-weight: 600;
     letter-spacing: 2px;
-
 }

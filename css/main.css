@@ -1,5 +1,9 @@
 @charset "UTF-8";
-.section2, .section3 {
+.section2Div, .section4, .section5Div {
+  display: flex;
+  justify-content: space-evenly; }
+
+.section2, .section3, .section5DivEquipo {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -76,12 +80,16 @@
 .boton1 {
   padding: 15px 25px;
   margin: 50px 0;
+  border-radius: 3px;
+  background-color: #fd3d38;
   border: 3px solid #fd3d38; }
   .boton1:hover {
     background-color: #f5f5f5; }
   .boton1 a {
     font-size: 1.3em;
     color: #ffff; }
+  .boton1:hover a {
+    color: #fd3d38; }
 
 .boton2 {
   padding: 10px 20px;
@@ -236,11 +244,241 @@ nav a {
 .section2 {
   padding: 100px; }
 
+.section2Div {
+  padding: 10% 0 0 0; }
+
+.section2DivProducto {
+  position: relative;
+  height: 31em;
+  width: 20em;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 0 0 50px 0;
+  background: #fd3d38;
+  box-shadow: 20px 20px 60px #bebebe; }
+  .section2DivProducto i {
+    color: #ffff;
+    background: none;
+    margin: 7px; }
+  .section2DivProducto p {
+    color: #ffff;
+    margin: 7px; }
+
+.section2DivProducto h4 {
+  font-size: 1.5rem;
+  color: #ffff;
+  margin: 7px; }
+  .section2DivProducto h4 p {
+    color: #ffff;
+    margin: 7px; }
+
+.section2DivProductoImg {
+  position: absolute;
+  transform: translate(-50%, -40%);
+  max-height: 100%;
+  max-width: 85%;
+  background: none; }
+
+.section2DivProductoInfo {
+  position: absolute;
+  transform: translate(-10%, 110%);
+  background: none; }
+
 /* FIN PRODUCTOS DE LA TIENDA */
 /* PROPÓSITO */
 .section3 {
   padding: 100px;
   background-color: #0F0F18; }
+  .section3 h2 {
+    text-align: center;
+    color: #ffff; }
+  .section3 i {
+    color: #ffff;
+    background: none; }
+  .section3 p {
+    color: #ffff; }
+
+.section3Image {
+  max-height: 30%;
+  max-width: 30%;
+  margin: 50px 0 0 0;
+  background: none; }
 
 /* FIN PROPÓSITO */
+/* CANAL YOUTUBE */
+.section4 {
+  padding: 100px; }
+
+.section4Canalyoutube {
+  width: 30rem; }
+
+/* FIN CANAL YOUTUBE */
+/* EQUIPO BRAINIALS */
+.section5 {
+  text-align: center;
+  padding: 100px; }
+
+.section5Div {
+  padding: 50px 0; }
+
+.section5DivEquipo {
+  /*     display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly; */
+  height: 25rem;
+  width: 19rem;
+  margin: 10px;
+  padding: 40px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
+  border-radius: 0 0 50px 0; }
+  .section5DivEquipo h4 {
+    font-size: 1.4em;
+    margin: 4px 0; }
+  .section5DivEquipo p {
+    margin: 4px 0; }
+  .section5DivEquipo button {
+    border: none;
+    background: none; }
+
+.section5DivImg {
+  width: 150px;
+  height: 150px; }
+
+/* FIN EQUIPO BRAINIALS */
+/* FORMULARIO DE CONTACTO */
+.section6 {
+  display: flex;
+  padding: 100px; }
+
+.section6Contactos {
+  margin: 0 100px 0 0;
+  width: 35em;
+  justify-content: space-evenly; }
+  .section6Contactos p {
+    font-weight: 600; }
+
+.section6Formulario {
+  text-align: center;
+  width: 45%;
+  padding: 50px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
+  border-radius: 0 0 70px 0; }
+  .section6Formulario form {
+    text-align: left; }
+  .section6Formulario h4 {
+    font-size: 1.7em; }
+
+/* FIN FORMULARIO DE CONTACTO */
+/* AJUSTES HOME MOBILE */
+@media (max-width: 1024px) {
+  .section2DivProducto {
+    height: 31em;
+    width: 18em; }
+  .section4 {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .section1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 0 0;
+    padding: 200px 100px; }
+  .section1Imagen {
+    align-items: center;
+    height: 70%;
+    width: 70%;
+    margin: 0; }
+  .section1Div1 {
+    width: 100%;
+    text-align: center; }
+  .divisor {
+    width: 34%;
+    margin: 20px auto; }
+  .section1Div3 {
+    display: flex;
+    justify-content: center;
+    padding: 50px; }
+    .section1Div3 a {
+      margin: 0 10px; }
+  .section2Div {
+    display: flex;
+    flex-flow: column wrap; }
+  .section2DivProducto {
+    margin: 100px 0; }
+  .section3 {
+    display: flex;
+    text-align: center; }
+  .section4 {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center; }
+  .section4Canalyoutube {
+    width: fit-content; }
+  .divisor3 {
+    display: inline-block; }
+  .section5Div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+  .section6 {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 100px; }
+  .section6Contactos {
+    text-align: center;
+    margin: 0 0 50px 0;
+    width: 100%; }
+  .section6Formulario {
+    width: 100%; } }
+
+@media (max-width: 480px) {
+  .section1 {
+    padding: 100px 25px; }
+    .section1 h1 {
+      font-size: 2.3em; }
+  .section1Div1 {
+    width: 100%;
+    margin: auto; }
+  .section1Div3 {
+    padding: 25px; }
+  .section2 {
+    padding: 25px; }
+  .section2DivProducto {
+    margin: 100px 0; }
+  .section2DivProductoInfo {
+    height: 12em;
+    width: 17.5em; }
+  .section3 {
+    padding: 25px; }
+    .section3 h2 {
+      font-size: 2.1em; }
+  .section4 {
+    padding: 100px 25px; }
+  .section4Video {
+    width: 100%; }
+  .section5 {
+    padding: 25px; }
+  .section5DivEquipo {
+    padding: 15px;
+    height: 22rem;
+    width: 16rem; }
+    .section5DivEquipo h4 {
+      font-size: 1.3em; }
+    .section5DivEquipo p {
+      font-size: 1em; }
+  .section6 {
+    padding: 40px; }
+  .section6Contactos {
+    width: 100%; }
+  .section6Formulario {
+    padding: 25px;
+    width: 100%; } }
+
+/* FIN AJUSTES HOME MOBILE */
 /* FIN HOME */
