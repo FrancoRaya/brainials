@@ -715,7 +715,7 @@ nav a {
 
 /* PÁGINA APOYAR */
 /* HEADER */
-    .apoyar__Section1 {
+    .apoyarSection1 {
         text-align: center;
         padding: 200px 20% 20px;
     }
@@ -723,14 +723,14 @@ nav a {
 
 
 /* PORQUÉ APOYAR */
-    .apoyar__Section2 {
+    .apoyarSection2 {
         display:flex;
         justify-content: space-evenly;
         align-items: center;
         padding: 100px;
     }
 
-    .apoyar__Section2--Caja {
+    .apoyarSection2Caja {
         text-align: center;
         background-color: #fd3d38;
         margin: 15px;
@@ -741,18 +741,18 @@ nav a {
         box-shadow:  20px 20px 60px #bebebe;
     }
 
-    .apoyar__Section2--Caja h3 {
+    .apoyarSection2Caja h3 {
         color: white;
     }
 
-    .apoyar__Section2--Caja p {
+    .apoyarSection2Caja p {
         color: white;
     }
 /* FIN PORQUÉ APOYAR */
 
 
 /* CLUB BRAINAIALS */
-    .apoyar__Section3 {
+    .apoyarSection3 {
         display: flex;
         flex-flow: column;
         justify-items: center;
@@ -763,16 +763,16 @@ nav a {
         color: white;
     }
 
-    .apoyar__Section3--titulo {
+    .apoyarSection3Titulo {
         color: white;
     }
 
-    .apoyar__Section3--texto {
+    .apoyarSection3Texto {
         color: white;
         width: 65%;
     }
 
-    .apoyar__Section3__Club {
+    .apoyarSection3Club {
         text-align: center;
         background-color: #fd3d38;
         padding: 25px;
@@ -782,18 +782,18 @@ nav a {
         box-shadow:  20px 20px 60px #212032;
     }
 
-    .apoyar__Section3__Club--Titulo {
+    .apoyarSection3ClubTitulo {
         font-style: italic;
         color: white;
     }
 
-    .apoyar__Section3__Club--Texto {
+    .apoyarSection3ClubTexto {
         font-size: 3em;
         font-weight: 800;
         color: white;
     }
 
-    .apoyar__Section3__Club--Lista {
+    .apoyarSection3ClubLista {
         display: flex;
         flex-flow: column wrap;
         align-content: center; 
@@ -801,52 +801,52 @@ nav a {
         padding: 0 0 20px 0;
     }
 
-    .apoyar__Section3__Club--Lista p {
+    .apoyarSection3ClubLista p {
         display: block;
         text-align: left;
         color: white;
         font-size: 1.2em;
     }
 
-    .apoyar__Section3--Beneficios {
+    .apoyarSection3Beneficios {
         align-items: center;
         background-color: #0F0F18;
         padding: 50px;
     }
 
-    .apoyar__Section3--Beneficios ul {
+    .apoyarSection3Beneficios ul {
         background: none;
     }
 
-    .apoyar__Section3--Beneficios li {
+    .apoyarSection3Beneficios li {
         color: white;
     }
 /* FIN CLUB BRAINAIALS */
 
 
 /* OTRAS FORMAS DE APOYAR */
-    .apoyar__Section4 {
+    .apoyarSection4 {
         display: flex;
         padding: 100px;
     }
 
-    .apoyar__Section4 p {
+    .apoyarSection4 p {
         color: #212032;
     }
 
-    .apoyar_Section4--acordion {
+    .apoyarSection4Acordion {
         box-shadow:  20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
     }
 
-    .apoyar_Section4--Button {
+    .apoyarSection4Button {
         font-weight: 700;
         font-size: 0.3em;
         color: #212032;
         background-color: white;
     }
 
-    .apoyar_Section4--Item {
+    .apoyarSection4Item {
         background-color: white;
     }
 /* FIN OTRAS FORMAS DE APOYAR */
@@ -854,100 +854,100 @@ nav a {
 
 /* AJUSTES APOYAR MOBILE */
 @media (max-width: 768px) {
-    .apoyar__Section1 {
+    .apoyarSection1 {
         padding: 200px 100px 50px;
     }
 
-    .apoyar__Section2 {
+    .apoyarSection2 {
         display: flex;
         flex-flow: column wrap;
         justify-content: space-evenly;
     }
 
-    .apoyar__Section2--Caja {
+    .apoyarSection2Caja {
         width: 70%;
     }
 
-    .apoyar__Section3 {
+    .apoyarSection3 {
         padding: 100px;
     }
 
-    .apoyar__Section3--texto {
+    .apoyarSection3Texto {
         width: 100%;
     }
 
-    .apoyar__Section3__Club {
+    .apoyarSection3Club {
         width: 350px;
     }
 
-    .apoyar__Section3__Club--Lista p {
+    .apoyarSection3ClubLista p {
         font-size: 1em;
     }
 
-    .apoyar__Section4 {
+    .apoyarSection4 {
         display: flex;
         flex-direction: column;
     }
 
-    .apoyar__Section4--Caja {
+    .apoyarSection4Caja {
         margin: 0 0 50px;
     }
 }
 
 
 @media (max-width: 480px) {
-    .apoyar__Section1 {
+    .apoyarSection1 {
         padding: 150px 25px 0;
     }
 
-    .apoyar__Section1 h1 {
+    .apoyarSection1 h1 {
         font-size: 2.5em;
     }
 
-    .apoyar__Section2 {
+    .apoyarSection2 {
         display: flex;
         flex-flow: column;
         padding: 25px;
     }
 
-    .apoyar__Section2--Caja {
+    .apoyarSection2Caja {
         width: fit-content;
     }
 
-    .apoyar__Section3 {
+    .apoyarSection3 {
         padding: 25px;
     }
 
-    .apoyar__Section3 h2 {
+    .apoyarSection3 h2 {
         font-size: 2em;
         padding: 0 50px;
     }
 
-    .apoyar__Section3 h3 {
+    .apoyarSection3 h3 {
         font-size: 1.5em;
         padding: 0 50px;
     }
 
-    .apoyar__Section3__Club {
-        width: fit-content;
+    .apoyarSection3Club {
+        width: 17em;
     }
 
 
-    .apoyar__Section3__Club--Lista p {
+    .apoyarSection3ClubLista p {
         font-size: 1em;
     }
 
-    .apoyar__Section3--Beneficios {
+    .apoyarSection3Beneficios {
         padding: 0;
         margin: 40px 0;
     }
 
-    .apoyar__Section4 {
+    .apoyarSection4 {
         padding: 25px 25px 75px;
 
     }
 
-    .apoyar__Section4 h2 {
+    .apoyarSection4 h2 {
         font-size: 2em;
     }
 }
@@ -1181,6 +1181,7 @@ nav a {
 
     .divisor5 {
         transform: rotate(90deg);
+        width: 4px;
     }
 
     .ebooksContactos {
@@ -1276,6 +1277,14 @@ nav a {
     background-color: #0F0F18;
 }
 
+.nuestrainiciativaBanner h3{
+    color: white;
+}
+
+.nuestrainiciativaBanner p{
+    color: white;
+}
+
 .nuestrainiciativaBannerCaja {
     background-color: #0F0F18;
 }
@@ -1286,14 +1295,6 @@ nav a {
     justify-content: center;
     margin: 0 0 0 50px;
     background-color: #0F0F18;
-}
-
-.nuestrainiciativaBanner h3{
-    color: white;
-}
-
-.nuestrainiciativaBanner p{
-    color: white;
 }
 /* FIN BANNER */
 
@@ -1353,13 +1354,16 @@ nav a {
     background-color: #0F0F18;
 }
 /* FIN BANNER 1 */
+
+
 /* OTRAS FORMAS DE APOYAR */
 .nuestrainiciativaSection5 {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    text-align: left;
     padding: 100px;
 }
 /* FIN OTRAS FORMAS DE APOYAR */
+
 
 /* AJUSTES MOBILE */
 @media (max-width: 768px) {
@@ -1505,6 +1509,5 @@ nav a {
         padding: 150px 25px 50px;
     }
 }
-
 /* FIN AJUSTE MOBILE */
 /* FIN 404 */

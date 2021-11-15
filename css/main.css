@@ -1,11 +1,11 @@
 @charset "UTF-8";
-.section2Div, .section4, .section5Div {
+.section2Div, .section4, .section5Div, .apoyarSection2, .ebooksSection2, .ebooksSection4, .ebooksContactos, .nuestrainiciativaSection4Caja, .nuestrainiciativaBanner1, .hablamosSection {
   display: flex;
   justify-content: space-evenly; }
 
-.section2, .section3, .section5DivEquipo {
+.section2, .section3, .section5DivEquipo, .apoyarSection3, .ebooksSection2Producto, .ebooksSection3, .ebooksSection3Oferta, .ebooksSection5Beneficio, .nuestrainiciativaSection4, .nuestrainiciativaSection4CajaEquipo {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
   text-align: center; }
@@ -19,34 +19,40 @@
   transition: 1s;
   box-shadow: 0px 0px 40px #bebebe; }
 
-.boton1 a, .boton2 a, .boton3 a, .boton4, .boton5 a, .boton6:hover a {
+.boton1 a, .boton2 a, .boton3 a, .boton4, .boton5 a, .boton6 a {
   font-weight: 600;
   letter-spacing: 2px; }
 
 /* AJUSTES GLOBALES */
 * {
   color: #212032;
-  background-color: #f5f5f5;
   margin: 0;
   padding: 0; }
-  * h1, * h2, * h3, * h4 {
-    font-family: 'Crimson Pro', serif;
-    font-weight: 900;
-    background: none; }
-  * p, * li, * a, * form, * input, * q, * button {
-    font-family: 'Poppins', sans-serif;
-    background: none;
-    text-decoration: none; }
-  * h1 {
-    font-size: 4em; }
-  * h2 {
-    font-size: 3em; }
-  * h3 {
-    font-size: 2em; }
-  * h4 {
-    font-size: 1.4em; }
-  * p, * li, * a, * form, * input, * q, * button {
-    font-size: 1.17em; }
+
+h1, h2, h3, h4 {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 900;
+  background: none; }
+
+p, li, a, form, input, q, button {
+  font-family: 'Poppins', sans-serif;
+  background: none;
+  text-decoration: none; }
+
+h1 {
+  font-size: 4em; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2em; }
+
+h4 {
+  font-size: 1.4em; }
+
+p, li, a, form, input, q, button {
+  font-size: 1.17em; }
 
 /* DIVISORES DE TEXTO-TÍTULO */
 .divisor1 {
@@ -125,23 +131,31 @@
     font-size: 1em;
     color: #fd3d38; }
 
-.boton6:hover {
-  background-color: #f5f5f5; }
-  .boton6:hover a {
+.boton6 {
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 3px;
+  background-color: #fd3d38;
+  border: 3px solid #fd3d38; }
+  .boton6:hover {
+    background-color: #f5f5f5; }
+  .boton6 a {
     font-size: 1.2em;
     color: #ffff; }
-  .boton6:hover:hover a {
+  .boton6:hover a {
     color: #fd3d38; }
 
 /* FIN BOTONES */
 /* BODY */
 body {
-  width: 100%; }
+  width: 100%;
+  background-color: #f5f5f5; }
 
 /* FIN BODY */
 /* HEADER */
 .headerNav {
-  padding: 20px 50px; }
+  padding: 20px 50px;
+  background-color: #f5f5f5; }
 
 .headerNavIcon {
   border: none; }
@@ -162,7 +176,7 @@ nav a {
 .footer {
   display: flex;
   align-items: center;
-  background-color: #212032;
+  background-color: #0F0F18;
   padding: 30px 100px; }
   .footer p {
     font-size: 3em;
@@ -322,10 +336,6 @@ nav a {
   padding: 50px 0; }
 
 .section5DivEquipo {
-  /*     display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-evenly; */
   height: 25rem;
   width: 19rem;
   margin: 10px;
@@ -482,3 +492,513 @@ nav a {
 
 /* FIN AJUSTES HOME MOBILE */
 /* FIN HOME */
+/* PÁGINA APOYAR */
+/* HEADER */
+.apoyarSection1 {
+  text-align: center;
+  padding: 200px 20% 20px; }
+
+/* FIN HEADER */
+/* PORQUÉ APOYAR */
+.apoyarSection2 {
+  align-items: center;
+  padding: 100px; }
+
+.apoyarSection2Caja {
+  text-align: center;
+  background-color: #fd3d38;
+  margin: 15px;
+  padding: 30px;
+  width: 28%;
+  height: auto;
+  border-radius: 0 0 60px 0;
+  box-shadow: 20px 20px 60px #bebebe; }
+  .apoyarSection2Caja h3 {
+    color: #ffff; }
+  .apoyarSection2Caja p {
+    color: #ffff; }
+
+/* FIN PORQUÉ APOYAR */
+/* CLUB BRAINAIALS */
+.apoyarSection3 {
+  padding: 100px 200px;
+  background-color: #0F0F18;
+  color: #ffff; }
+
+.apoyarSection3Titulo {
+  color: #ffff; }
+
+.apoyarSection3Texto {
+  color: #ffff;
+  width: 65%; }
+
+.apoyarSection3Club {
+  text-align: center;
+  background-color: #fd3d38;
+  padding: 25px;
+  width: 400px;
+  height: 28em;
+  border-radius: 0 0 80px 0;
+  box-shadow: 20px 20px 60px #212032; }
+
+.apoyarSection3ClubTitulo {
+  font-style: italic;
+  color: #ffff; }
+
+.apoyarSection3ClubTexto {
+  font-size: 3em;
+  font-weight: 800;
+  color: #ffff; }
+
+.apoyarSection3ClubLista {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  background: none;
+  padding: 0 0 20px 0; }
+  .apoyarSection3ClubLista p {
+    display: block;
+    text-align: left;
+    color: #ffff;
+    font-size: 1.2em; }
+
+.apoyarSection3Beneficios {
+  align-items: center;
+  background-color: #0F0F18;
+  padding: 50px; }
+  .apoyarSection3Beneficios ul {
+    background: none; }
+  .apoyarSection3Beneficios li {
+    color: #ffff; }
+
+/* FIN CLUB BRAINAIALS */
+/* OTRAS FORMAS DE APOYAR */
+.apoyarSection4 {
+  display: flex;
+  padding: 100px; }
+  .apoyarSection4 p {
+    color: #212032; }
+
+.apoyarSection4Acordion {
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff; }
+
+.apoyarSection4Button {
+  font-weight: 700;
+  font-size: 0.3em;
+  color: #0F0F18;
+  background-color: #ffff; }
+
+.apoyarSection4Item {
+  background-color: #ffff; }
+
+/* FIN OTRAS FORMAS DE APOYAR */
+/* AJUSTES APOYAR MOBILE */
+@media (max-width: 768px) {
+  .apoyarSection1 {
+    padding: 200px 100px 50px; }
+  .apoyarSection2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly; }
+  .apoyarSection2Caja {
+    width: 70%; }
+  .apoyarSection3 {
+    padding: 100px; }
+  .apoyarSection3Texto {
+    width: 100%; }
+  .apoyarSection3Club {
+    width: 350px; }
+  .apoyarSection3ClubLista p {
+    font-size: 1em; }
+  .apoyarSection4 {
+    display: flex;
+    flex-direction: column; }
+  .apoyarSection4Caja {
+    margin: 0 0 50px; } }
+
+@media (max-width: 480px) {
+  .apoyarSection1 {
+    padding: 150px 25px 0; }
+    .apoyarSection1 h1 {
+      font-size: 2.5em; }
+  .apoyarSection2 {
+    display: flex;
+    flex-flow: column;
+    padding: 25px; }
+  .apoyarSection2Caja {
+    width: fit-content; }
+  .apoyarSection3 {
+    padding: 25px; }
+    .apoyarSection3 h2 {
+      font-size: 2em;
+      padding: 0 50px; }
+    .apoyarSection3 h3 {
+      font-size: 1.5em;
+      padding: 0 50px; }
+  .apoyarSection3Club {
+    width: 17em; }
+  .apoyarSection3ClubLista p {
+    font-size: 1em; }
+  .apoyarSection3Beneficios {
+    padding: 0;
+    margin: 40px 0; }
+  .apoyarSection4 {
+    padding: 25px 25px 75px; }
+    .apoyarSection4 h2 {
+      font-size: 2em; } }
+
+/* FIN AJUSTES APOYAR MOBILE */
+/* FIN PÁGINA APOYAR */
+/* PÁGINA E-BOOK */
+/* HEADER */
+.ebooksSection1 {
+  text-align: center;
+  padding: 200px 100px 0; }
+
+/* FIN HEADER */
+/* PRODUCTOS */
+.ebooksSection2 {
+  padding: 100px; }
+
+.ebooksSection2Producto {
+  height: auto;
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff; }
+  .ebooksSection2Producto h3 {
+    font-size: 1.5em;
+    margin: 10px 0; }
+  .ebooksSection2Producto p {
+    font-size: 1.3em;
+    margin: 10px 0; }
+
+.ebooksSection2Image {
+  height: auto;
+  width: 75%; }
+
+/* FIN PRODUCTOS */
+/* OFERTAS */
+.ebooksSection3 {
+  padding: 100px;
+  background-color: #0F0F18; }
+  .ebooksSection3 h2 {
+    color: #ffff; }
+
+.ebooksSection3Oferta {
+  height: 40em;
+  width: 60em;
+  background-color: #0F0F18; }
+  .ebooksSection3Oferta img {
+    width: 50%;
+    height: auto; }
+  .ebooksSection3Oferta h3 {
+    color: #ffff; }
+  .ebooksSection3Oferta div {
+    display: flex;
+    background-color: #0F0F18;
+    padding: 0; }
+
+.ebooksSection3Rebaja {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  justify-content: center;
+  padding: 15px;
+  margin: 0;
+  color: #ffff;
+  background-color: #0F0F18; }
+
+.ebooksSection3Precio {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 15px;
+  margin: 0;
+  color: #ffff;
+  background-color: #0F0F18; }
+
+/* FIN OFERTAS */
+/* SOBRE LOS EBOOKS */
+.ebooksSection4 {
+  padding: 100px; }
+
+.ebooksSection4Caja {
+  width: 30em;
+  background: none;
+  text-align: left; }
+
+.ebooksSection4Img {
+  display: flex;
+  justify-content: center;
+  width: fit-content; }
+  .ebooksSection4Img img {
+    width: 55%;
+    height: auto; }
+
+/* FIN SOBRE LOS EBOOKS */
+/* BENEFICIOS */
+.ebooksSection5 {
+  display: flex;
+  align-items: center;
+  padding: 100px; }
+
+.ebooksSection5Beneficio {
+  justify-content: space-evenly;
+  height: auto;
+  width: 100%;
+  margin: 15px;
+  padding: 20px; }
+
+/* FIN BENEFICIOS */
+/* CONTACTOS */
+.ebooksContactos {
+  align-items: center;
+  padding: 50px 100px; }
+
+.ebooksContactosRedes {
+  display: flex;
+  align-items: center;
+  justify-content: right; }
+
+/* FIN CONTACTOS */
+/* AJUSTES MOBILE */
+@media (max-width: 768px) {
+  .ebooksSection1 {
+    width: auto; }
+  .ebooksSection2 {
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 100px; }
+  .ebooksSection2Producto {
+    width: auto;
+    margin: 50px; }
+    .ebooksSection2Producto h3 {
+      font-size: 2.3em; }
+    .ebooksSection2Producto p {
+      font-size: 1.8em; }
+  .ebooksSection3Oferta {
+    width: auto; }
+    .ebooksSection3Oferta img {
+      width: 75%;
+      height: auto; }
+  .ebooksSection4 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+  .ebooksSection4Caja {
+    text-align: center;
+    width: fit-content; }
+  .ebooksSection5 {
+    display: flex;
+    flex-flow: column; }
+  .ebooksSection5Beneficio {
+    width: fit-content; }
+  .divisor5 {
+    transform: rotate(90deg);
+    width: 4px; }
+  .ebooksContactos {
+    display: flex;
+    flex-flow: column;
+    text-align: center; }
+  .ebooksContactos {
+    padding: 25px; } }
+
+@media (max-width: 480px) {
+  .ebooksSection1 {
+    padding: 150px 25px 0; }
+  .ebooksSection2 {
+    padding: 25px; }
+  .ebooksSection2Producto {
+    width: fit-content;
+    margin: 0 0 50px; }
+    .ebooksSection2Producto h3 {
+      font-size: 1.7em; }
+    .ebooksSection2Producto p {
+      font-size: 1.4em; }
+  .ebooksSection3 {
+    padding: 25px; }
+  .ebooksSection4 {
+    padding: 100px 25px; }
+  .ebooksSection5 {
+    padding: 25px; }
+  .ebooksContactos h3 {
+    font-size: 1.7em; } }
+
+/* FIN AJUSTES MOBILE */
+/* FIN PÁGINA E-BOOK */
+/* PÁGINA NUESTRA INICIATIVA */
+/* HEADER */
+.nuestrainiciativaSection1 {
+  text-align: center;
+  padding: 200px 100px 0; }
+
+/* FIN HEADER */
+/* SOBRE NOSOTROS */
+.nuestrainiciativaSection2 {
+  padding: 100px 200px; }
+  .nuestrainiciativaSection2 div {
+    display: flex;
+    justify-content: center; }
+  .nuestrainiciativaSection2 p {
+    line-height: 2rem;
+    margin: 10px 0 40px; }
+  .nuestrainiciativaSection2 Img {
+    width: 25%;
+    height: auto;
+    margin: 15px; }
+
+/* FIN SOBRE NOSOTROS */
+/* BANNER */
+.nuestrainiciativaBanner {
+  display: flex;
+  justify-content: center;
+  padding: 50px 100px;
+  background-color: #0F0F18; }
+  .nuestrainiciativaBanner h3 {
+    color: #ffff; }
+  .nuestrainiciativaBanner p {
+    color: #ffff; }
+
+.nuestrainiciativaBannerCaja {
+  background-color: #0F0F18; }
+
+.nuestrainiciativaBannerBoton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 50px;
+  background-color: #0F0F18; }
+
+/* FIN BANNER */
+/* EQUIPO */
+.nuestrainiciativaSection4 {
+  /*     display: flex;
+    flex-flow: column;
+    text-align: center; */
+  padding: 100px; }
+
+.nuestrainiciativaSection4Caja {
+  flex-flow: row wrap;
+  padding: 100px; }
+  .nuestrainiciativaSection4Caja img {
+    width: 40%;
+    height: auto; }
+
+.nuestrainiciativaSection4CajaEquipo {
+  /*     display: flex;
+    flex-flow: column wrap;
+    align-items: center; */
+  width: 40%;
+  margin: 30px;
+  padding: 40px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
+  border-radius: 0 0 60px 0; }
+  .nuestrainiciativaSection4CajaEquipo q {
+    display: inline-block;
+    text-align: left; }
+
+/* FIN EQUIPO */
+/* BANNER 1 */
+.nuestrainiciativaBanner1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 100px;
+  background-color: #0F0F18; }
+  .nuestrainiciativaBanner1 h3 {
+    color: white;
+    margin: 0 30px 0 0; }
+  .nuestrainiciativaBanner1 div {
+    background-color: #0F0F18; }
+
+/* FIN BANNER 1 */
+/* AJUSTES MOBILE */
+@media (max-width: 768px) {
+  .nuestrainiciativaSection2 {
+    padding: 100px; }
+  .nuestrainiciativaBanner {
+    display: flex;
+    flex-flow: column;
+    text-align: center; }
+  .nuestrainiciativaBannerBoton {
+    margin: 0; }
+  .nuestrainiciativaSection4Caja {
+    display: flex;
+    flex-flow: column; }
+  .nuestrainiciativaSection4CajaEquipo {
+    width: fit-content; } }
+
+@media (max-width: 480px) {
+  .nuestrainiciativaSection1 {
+    padding: 150px 25px 0; }
+  .nuestrainiciativaSection2 {
+    padding: 25px; }
+  .nuestrainiciativaBanner {
+    padding: 25px; }
+  .nuestrainiciativaBanner1 {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 25px; }
+    .nuestrainiciativaBanner1 h3 {
+      margin: 0; }
+  .nuestrainiciativaSection4 {
+    padding: 25px; }
+  .nuestrainiciativaSection4Caja {
+    padding: 0; } }
+
+/* FIN AJUSTES MOBILE */
+/* FIN PÁGINA NUESTRA INICIATIVA */
+/* HABLAMOS */
+.hablamosSection {
+  padding: 200px 100px; }
+
+.hablamosSectionCaja {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  padding: 30px; }
+  .hablamosSectionCaja h1 {
+    font-size: 2em; }
+
+.hablamosSectionFormulario {
+  text-align: center;
+  width: 45%;
+  padding: 50px;
+  margin: 0 0 0 20px;
+  border-radius: 0 0 70px 0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff; }
+  .hablamosSectionFormularioo form {
+    text-align: left; }
+
+/* AJUSTES MOBILE */
+@media (max-width: 768px) {
+  .hablamosSection {
+    display: flex;
+    flex-flow: column; }
+  .hablamosSectionCaja {
+    width: fit-content; }
+  .hablamosSectionFormulario {
+    flex-flow: column;
+    width: 100%;
+    margin: 50px 0; } }
+
+@media (max-width: 480px) {
+  .hablamosSection {
+    padding: 150px 25px 50px; }
+  .hablamosSectionFormulario {
+    padding: 30px; } }
+
+/* FIN AJUSTES MOBILE */
+/* FIN HABLAMOS */
+/* 404 */
+.Section404 {
+  text-align: center;
+  padding: 200px 100px 100px; }
+
+/* AJUSTE MOBILE */
+@media (max-width: 480px) {
+  .Section404 {
+    padding: 150px 25px 50px; } }
+
+/* FIN AJUSTE MOBILE */
+/* FIN 404 */
