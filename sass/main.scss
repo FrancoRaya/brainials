@@ -41,24 +41,26 @@ p , li , a , form , input, q , button {
 }
 
 /* DIVISORES DE TEXTO-TÍTULO */
-.divisor1 {    
-    display: inline-block;
-    height: 2px;
-    @extend %divisor-width-margin;
+.divisor {
+    height: 4px;
+    width: 300px;
+    margin: 15px 0px 30px 0px ;
     background-color: $color-princial;
+}
+
+.divisor1 {
+    @extend %divisor-setting;    
+    height: 2px;
 }
 
 .divisor2 {
-    display: inline-block;
+    @extend %divisor-setting;
     height: 4px;
-    @extend %divisor-width-margin;
-    background-color: $color-princial;
 }
 
 .divisor3 {
+    @extend %divisor-setting;
     height: 2px;
-    @extend %divisor-width-margin;
-    background-color: $color-princial;
 }
 
 .divisor4 {
@@ -70,6 +72,7 @@ p , li , a , form , input, q , button {
 }
 
 .divisor5 {
+    display: inline-block;
     height: 170px;
     width: 10px;
     background-color: $color-princial;
@@ -79,11 +82,7 @@ p , li , a , form , input, q , button {
 
 /* BOTONES */
 .boton1 {
-    padding: 15px 25px;
-    margin: 50px 0;
-    border-radius: $border-radius-boton;
-    background-color: $color-princial;
-    border: 3px solid $color-princial;
+    @include botones (15px 25px , 50px 0, $color-princial, 3px solid $color-princial, $border-radius-boton);
 
     &:hover {
         @extend %scale-boton;
@@ -102,11 +101,7 @@ p , li , a , form , input, q , button {
 }
 
 .boton2 {
-    padding: 10px 20px;
-    margin: 10px 0 0 0;
-    border-radius: $border-radius-boton;
-    background-color: $color-cuarto;
-    border: none;
+    @include botones (10px 20px, 10px 0, $color-cuarto, none, $border-radius-boton);
 
     &:hover {
         @extend %scale-boton;
@@ -120,7 +115,7 @@ p , li , a , form , input, q , button {
 }
 
 .boton3 {
-    margin: 50px 0 0 0;
+    margin: 25px 0;
     border: none;
 
     & a {
@@ -132,13 +127,8 @@ p , li , a , form , input, q , button {
 
 .boton4 {
     @extend %font-boton;
-    padding: 8px 20px;
-    margin: 20px 0 0 0;
-    font-size: 1.1em;
-    border-radius: $border-radius-boton;
+    @include botones (8px 20px, 20px 0, $color-princial, solid 2px $color-princial, $border-radius-boton);
     color: $color-cuarto;
-    background-color: $color-princial;
-    border: $color-princial solid 2px;
 
     &:hover {
         @extend %scale-boton;
@@ -157,11 +147,7 @@ p , li , a , form , input, q , button {
 }
 
 .boton6 {
-    padding: 10px 20px;
-    margin: 20px 0;
-    border-radius: 3px;
-    background-color: $color-princial;
-    border: 3px solid $color-princial;
+    @include botones (10px 20px, 20px 0, $color-princial, solid 3px $color-princial, $border-radius-boton);
 
     &:hover {
         @extend %scale-boton;
@@ -248,10 +234,7 @@ nav {
 /* AJUSTES RESPONSIVE */
 @media (max-width:768px) {
     nav {
-/*         @extend %flexbox-column; */
-        display: flex;
-        flex-flow: column;
-        align-items: center;
+        @include mobile-column;
 
         & ul {
             margin: 0;
@@ -271,8 +254,7 @@ nav {
     }
 
     .footer {
-        display: flex;
-        flex-direction: column;
+        @include mobile-column;
         text-align: center;
         padding: 0;
     }
@@ -311,13 +293,6 @@ nav {
 
 .section1Imagen {
     margin: 0 0 0 10%;
-}
-
-.divisor {
-    height: 4px;
-    width: 300px;
-    margin: 15px 0px 30px 0px ;
-    background-color: $color-princial;
 }
 
 .section1Div3 {
@@ -364,12 +339,12 @@ nav {
         color: $color-cuarto;
         margin: 7px;
     }
-}
 
-.section2DivProducto h4 {
+    & h4 {
     font-size: 1.5rem;
     color: $color-cuarto;
     margin: 7px;
+    }
 
     & p {
         color: $color-cuarto;
@@ -443,7 +418,6 @@ nav {
 
 .section5Div {
     @extend %flexbox-evenly;
-
     padding: 50px 0;
 }
 
@@ -520,8 +494,7 @@ nav {
     }
 
     .section4 {
-        display: flex;
-        flex-flow: column wrap;
+        @include mobile-column;
         text-align: center;
     }
 }
@@ -529,10 +502,7 @@ nav {
 
 @media (max-width:768px) {
     .section1 {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
+        @include mobile-column;
         margin: 100px 0 0 0;
         padding: 200px 100px;
     }
@@ -565,8 +535,7 @@ nav {
     }
 
     .section2Div {
-        display: flex;
-        flex-flow: column wrap;
+        @include mobile-column;
     }
 
     .section2DivProducto {
@@ -579,8 +548,7 @@ nav {
     }
 
     .section4 {
-        display: flex;
-        flex-flow: column wrap;
+        @include mobile-column;
         text-align: center;
     }
 
@@ -592,15 +560,11 @@ nav {
         display: inline-block;
     }
     .section5Div {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
+        @include mobile-column;
     }
 
     .section6 {
-        display: flex;
-        justify-content: center;
-        flex-flow: column wrap;
+        @include mobile-column;
         padding: $padding-100;
     }
 
@@ -841,8 +805,7 @@ nav {
     }
 
     .apoyarSection2 {
-        display: flex;
-        flex-flow: column wrap;
+        @include mobile-column;
         justify-content: space-evenly;
     }
 
@@ -869,8 +832,7 @@ nav {
     } 
 
     .apoyarSection4 {
-        display: flex;
-        flex-direction: column;
+        @include mobile-column;
     }
 
     .apoyarSection4Caja {
@@ -889,9 +851,8 @@ nav {
     }
 
     .apoyarSection2 {
-        display: flex;
-        flex-flow: column;
-        padding: $padding-25;
+        @include mobile-column;
+        padding: 100px 25px;
     }
 
     .apoyarSection2Caja {
@@ -899,7 +860,7 @@ nav {
     }
 
     .apoyarSection3 {
-        padding: $padding-25;
+        padding: 100px 25px;
 
         & h2 {
             font-size: 2em;
@@ -1061,6 +1022,7 @@ nav {
 }
 /* FIN SOBRE LOS EBOOKS */
 
+
 /* BENEFICIOS */
 .ebooksSection5 {
     display: flex;
@@ -1077,6 +1039,7 @@ nav {
     padding: 20px;
 }
 /* FIN BENEFICIOS */
+
 
 /* CONTACTOS */
 .ebooksContactos {
@@ -1100,9 +1063,8 @@ nav {
     }
 
     .ebooksSection2 {
+        @include mobile-column;
         width: auto;
-        display: flex;
-        flex-flow: column;
         padding: $padding-100;
     }
 
@@ -1129,9 +1091,7 @@ nav {
     }
 
     .ebooksSection4 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
+        @include mobile-column;
     }
 
     .ebooksSection4Caja {
@@ -1140,8 +1100,7 @@ nav {
     }
 
     .ebooksSection5 {
-        display: flex;
-        flex-flow: column;
+        @include mobile-column;
     }
 
     .ebooksSection5Beneficio {
@@ -1154,8 +1113,7 @@ nav {
     }
 
     .ebooksContactos {
-        display: flex;
-        flex-flow: column;
+        @include mobile-column;
         text-align: center;
     }
 
@@ -1277,9 +1235,6 @@ nav {
 /* EQUIPO */
 .nuestrainiciativaSection4 {
     @extend %flexbox-column;
-/*     display: flex;
-    flex-flow: column;
-    text-align: center; */
     padding: $padding-100;
 }
 
@@ -1296,9 +1251,6 @@ nav {
 
 .nuestrainiciativaSection4CajaEquipo {
     @extend %flexbox-column;
-/*     display: flex;
-    flex-flow: column wrap;
-    align-items: center; */
     width: 40%;
     margin: 30px;
     padding: 40px;
@@ -1340,8 +1292,7 @@ nav {
     }
     
     .nuestrainiciativaBanner {
-        display: flex;
-        flex-flow: column;
+        @include mobile-column;
         text-align: center;
     }
 
@@ -1350,8 +1301,7 @@ nav {
     }
 
     .nuestrainiciativaSection4Caja {
-        display: flex;
-        flex-flow: column;
+        @include mobile-column;
     }
 
     .nuestrainiciativaSection4CajaEquipo {
@@ -1374,8 +1324,7 @@ nav {
     }
 
     .nuestrainiciativaBanner1 {
-        display: flex;
-        flex-flow: column;
+        @include mobile-column;
         text-align: center;
         padding: $padding-25;
 
@@ -1431,8 +1380,7 @@ nav {
 /* AJUSTES MOBILE */
 @media (max-width: 768px) {
     .hablamosSection {
-        display: flex;
-        flex-flow: column;
+        @include mobile-column;
     }
 
     .hablamosSectionCaja {

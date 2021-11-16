@@ -11,8 +11,10 @@
   text-align: center; }
 
 .divisor1, .divisor2, .divisor3 {
+  display: inline-block;
   width: 100px;
-  margin: 30px 0px; }
+  margin: 30px 0px;
+  background-color: #fd3d38; }
 
 .boton1:hover, .boton2:hover, .boton4:hover, .boton6:hover {
   transform: scale(1.2, 1.2);
@@ -55,19 +57,20 @@ p, li, a, form, input, q, button {
   font-size: 1.17em; }
 
 /* DIVISORES DE TEXTO-TÍTULO */
-.divisor1 {
-  display: inline-block;
-  height: 2px;
+.divisor {
+  height: 4px;
+  width: 300px;
+  margin: 15px 0px 30px 0px;
   background-color: #fd3d38; }
+
+.divisor1 {
+  height: 2px; }
 
 .divisor2 {
-  display: inline-block;
-  height: 4px;
-  background-color: #fd3d38; }
+  height: 4px; }
 
 .divisor3 {
-  height: 2px;
-  background-color: #fd3d38; }
+  height: 2px; }
 
 .divisor4 {
   display: inline-block;
@@ -77,6 +80,7 @@ p, li, a, form, input, q, button {
   background-color: #0F0F18; }
 
 .divisor5 {
+  display: inline-block;
   height: 170px;
   width: 10px;
   background-color: #fd3d38; }
@@ -86,9 +90,9 @@ p, li, a, form, input, q, button {
 .boton1 {
   padding: 15px 25px;
   margin: 50px 0;
-  border-radius: 3px;
   background-color: #fd3d38;
-  border: 3px solid #fd3d38; }
+  border: 3px solid #fd3d38;
+  border-radius: 3px; }
   .boton1:hover {
     background-color: #f5f5f5; }
   .boton1 a {
@@ -99,16 +103,16 @@ p, li, a, form, input, q, button {
 
 .boton2 {
   padding: 10px 20px;
-  margin: 10px 0 0 0;
-  border-radius: 3px;
+  margin: 10px 0;
   background-color: #ffff;
-  border: none; }
+  border: none;
+  border-radius: 3px; }
   .boton2 a {
     font-size: 1.1em;
     color: #fd3d38; }
 
 .boton3 {
-  margin: 50px 0 0 0;
+  margin: 25px 0;
   border: none; }
   .boton3 a {
     font-size: 1.2em;
@@ -116,12 +120,11 @@ p, li, a, form, input, q, button {
 
 .boton4 {
   padding: 8px 20px;
-  margin: 20px 0 0 0;
-  font-size: 1.1em;
-  border-radius: 3px;
-  color: #ffff;
+  margin: 20px 0;
   background-color: #fd3d38;
-  border: #fd3d38 solid 2px; }
+  border: solid 2px #fd3d38;
+  border-radius: 3px;
+  color: #ffff; }
   .boton4:hover {
     border: #fd3d38 solid 3px; }
 
@@ -134,9 +137,9 @@ p, li, a, form, input, q, button {
 .boton6 {
   padding: 10px 20px;
   margin: 20px 0;
-  border-radius: 3px;
   background-color: #fd3d38;
-  border: 3px solid #fd3d38; }
+  border: solid 3px #fd3d38;
+  border-radius: 3px; }
   .boton6:hover {
     background-color: #f5f5f5; }
   .boton6 a {
@@ -195,10 +198,10 @@ nav a {
 /* AJUSTES RESPONSIVE */
 @media (max-width: 768px) {
   nav {
-    /*         @extend %flexbox-column; */
     display: flex;
     flex-flow: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     nav ul {
       margin: 0;
       padding: 0; } }
@@ -211,7 +214,9 @@ nav a {
     width: 70%; }
   .footer {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 0; }
   .footerRedessociales {
@@ -238,12 +243,6 @@ nav a {
 
 .section1Imagen {
   margin: 0 0 0 10%; }
-
-.divisor {
-  height: 4px;
-  width: 300px;
-  margin: 15px 0px 30px 0px;
-  background-color: #fd3d38; }
 
 .section1Div3 {
   display: flex;
@@ -277,12 +276,11 @@ nav a {
   .section2DivProducto p {
     color: #ffff;
     margin: 7px; }
-
-.section2DivProducto h4 {
-  font-size: 1.5rem;
-  color: #ffff;
-  margin: 7px; }
-  .section2DivProducto h4 p {
+  .section2DivProducto h4 {
+    font-size: 1.5rem;
+    color: #ffff;
+    margin: 7px; }
+  .section2DivProducto p {
     color: #ffff;
     margin: 7px; }
 
@@ -387,7 +385,9 @@ nav a {
     width: 18em; }
   .section4 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     text-align: center; } }
 
 @media (max-width: 768px) {
@@ -417,7 +417,9 @@ nav a {
       margin: 0 10px; }
   .section2Div {
     display: flex;
-    flex-flow: column wrap; }
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
   .section2DivProducto {
     margin: 100px 0; }
   .section3 {
@@ -425,7 +427,9 @@ nav a {
     text-align: center; }
   .section4 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     text-align: center; }
   .section4Canalyoutube {
     width: fit-content; }
@@ -433,12 +437,14 @@ nav a {
     display: inline-block; }
   .section5Div {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center; }
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
   .section6 {
     display: flex;
+    flex-flow: column;
+    align-items: center;
     justify-content: center;
-    flex-flow: column wrap;
     padding: 100px; }
   .section6Contactos {
     text-align: center;
@@ -598,7 +604,9 @@ nav a {
     padding: 200px 100px 50px; }
   .apoyarSection2 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     justify-content: space-evenly; }
   .apoyarSection2Caja {
     width: 70%; }
@@ -612,7 +620,9 @@ nav a {
     font-size: 1em; }
   .apoyarSection4 {
     display: flex;
-    flex-direction: column; }
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
   .apoyarSection4Caja {
     margin: 0 0 50px; } }
 
@@ -624,11 +634,13 @@ nav a {
   .apoyarSection2 {
     display: flex;
     flex-flow: column;
-    padding: 25px; }
+    align-items: center;
+    justify-content: center;
+    padding: 100px 25px; }
   .apoyarSection2Caja {
     width: fit-content; }
   .apoyarSection3 {
-    padding: 25px; }
+    padding: 100px 25px; }
     .apoyarSection3 h2 {
       font-size: 2em;
       padding: 0 50px; }
@@ -765,9 +777,11 @@ nav a {
   .ebooksSection1 {
     width: auto; }
   .ebooksSection2 {
-    width: auto;
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
     padding: 100px; }
   .ebooksSection2Producto {
     width: auto;
@@ -784,13 +798,16 @@ nav a {
   .ebooksSection4 {
     display: flex;
     flex-flow: column;
+    align-items: center;
     justify-content: center; }
   .ebooksSection4Caja {
     text-align: center;
     width: fit-content; }
   .ebooksSection5 {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
   .ebooksSection5Beneficio {
     width: fit-content; }
   .divisor5 {
@@ -799,6 +816,8 @@ nav a {
   .ebooksContactos {
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
     text-align: center; }
   .ebooksContactos {
     padding: 25px; } }
@@ -872,9 +891,6 @@ nav a {
 /* FIN BANNER */
 /* EQUIPO */
 .nuestrainiciativaSection4 {
-  /*     display: flex;
-    flex-flow: column;
-    text-align: center; */
   padding: 100px; }
 
 .nuestrainiciativaSection4Caja {
@@ -885,9 +901,6 @@ nav a {
     height: auto; }
 
 .nuestrainiciativaSection4CajaEquipo {
-  /*     display: flex;
-    flex-flow: column wrap;
-    align-items: center; */
   width: 40%;
   margin: 30px;
   padding: 40px;
@@ -918,12 +931,16 @@ nav a {
   .nuestrainiciativaBanner {
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
     text-align: center; }
   .nuestrainiciativaBannerBoton {
     margin: 0; }
   .nuestrainiciativaSection4Caja {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
   .nuestrainiciativaSection4CajaEquipo {
     width: fit-content; } }
 
@@ -937,6 +954,8 @@ nav a {
   .nuestrainiciativaBanner1 {
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 25px; }
     .nuestrainiciativaBanner1 h3 {
@@ -974,7 +993,9 @@ nav a {
 @media (max-width: 768px) {
   .hablamosSection {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
   .hablamosSectionCaja {
     width: fit-content; }
   .hablamosSectionFormulario {
