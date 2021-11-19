@@ -1,9 +1,9 @@
 @charset "UTF-8";
-.section2Div, .section4, .section5Div, .apoyarSection2, .ebooksSection2, .ebooksSection4, .ebooksContactos, .nuestrainiciativaSection4Caja, .nuestrainiciativaBanner1, .hablamosSection {
+.section2Caja, .section4, .section5Caja, .apoyarSection2, .ebooksSection2, .ebooksSection4, .ebooksContactos, .nuestrainiciativaSection4Caja, .nuestrainiciativaBanner1, .hablamosSection {
   display: flex;
   justify-content: space-evenly; }
 
-.section2, .section3, .section5DivEquipo, .apoyarSection3, .ebooksSection2Producto, .ebooksSection3, .ebooksSection3Oferta, .ebooksSection5Beneficio, .nuestrainiciativaSection4, .nuestrainiciativaSection4CajaEquipo {
+.section2, .section3, .section5CajaEquipo, .apoyarSection3, .ebooksSection2Producto, .ebooksSection3, .ebooksSection3Oferta, .ebooksSection5Beneficio, .nuestrainiciativaSection4, .nuestrainiciativaSection4CajaEquipo {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -93,23 +93,19 @@ p, li, a, form, input, q, button {
   background-color: #fd3d38;
   border: 3px solid #fd3d38;
   border-radius: 3px; }
-  .boton1:hover {
-    background-color: #f5f5f5; }
   .boton1 a {
     font-size: 1.3em;
     color: #ffff; }
-  .boton1:hover a {
-    color: #fd3d38; }
 
 .boton2 {
   padding: 10px 20px;
   margin: 10px 0;
-  background-color: #ffff;
+  background-color: #fd3d38;
   border: none;
   border-radius: 3px; }
   .boton2 a {
     font-size: 1.1em;
-    color: #fd3d38; }
+    color: #ffff; }
 
 .boton3 {
   margin: 25px 0;
@@ -125,8 +121,6 @@ p, li, a, form, input, q, button {
   border: solid 2px #fd3d38;
   border-radius: 3px;
   color: #ffff; }
-  .boton4:hover {
-    border: #fd3d38 solid 3px; }
 
 .boton5 {
   margin: 10px 0; }
@@ -206,23 +200,24 @@ nav a {
       margin: 0;
       padding: 0; } }
 
-@media (max-width: 480px) {
-  .headerNav {
-    padding: 20px; }
-  .headerNavLogo {
-    height: auto;
-    width: 70%; }
+@media (max-width: 575px) {
   .footer {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0; }
+    text-align: center; }
   .footerRedessociales {
     justify-content: center; }
     .footerRedessociales a {
       margin: 10px; } }
+
+@media (max-width: 480px) {
+  .headerNav {
+    padding: 20px; }
+  .headerNavLogo {
+    height: auto;
+    width: 70%; } }
 
 /* FIN AJUSTES RESPONSIVE */
 /* FIN AJUSTES GLOBALES */
@@ -236,7 +231,7 @@ nav a {
   height: 900px;
   padding: 100px; }
 
-.section1Div1 {
+.section1Caja {
   height: auto;
   width: 43%;
   background: none; }
@@ -244,12 +239,12 @@ nav a {
 .section1Imagen {
   margin: 0 0 0 10%; }
 
-.section1Div3 {
+.section1Redes {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 0 100px 0 0; }
-  .section1Div3 a {
+  .section1Redes a {
     margin: 0 0 0 15px; }
 
 /* FIN HEADER */
@@ -257,41 +252,41 @@ nav a {
 .section2 {
   padding: 100px; }
 
-.section2Div {
+.section2Caja {
   padding: 10% 0 0 0; }
 
-.section2DivProducto {
+.section2CajaProducto {
   position: relative;
   height: 31em;
   width: 20em;
   padding: 30px;
   margin: 20px;
   border-radius: 0 0 50px 0;
-  background: #fd3d38;
+  background: #f5f5f5;
   box-shadow: 20px 20px 60px #bebebe; }
-  .section2DivProducto i {
-    color: #ffff;
+  .section2CajaProducto i {
+    color: #212032;
     background: none;
     margin: 7px; }
-  .section2DivProducto p {
-    color: #ffff;
+  .section2CajaProducto p {
+    color: #212032;
     margin: 7px; }
-  .section2DivProducto h4 {
+  .section2CajaProducto h4 {
     font-size: 1.5rem;
-    color: #ffff;
+    color: #212032;
     margin: 7px; }
-  .section2DivProducto p {
-    color: #ffff;
+  .section2CajaProducto p {
+    color: #212032;
     margin: 7px; }
 
-.section2DivProductoImg {
+.section2CajaProductoImg {
   position: absolute;
   transform: translate(-50%, -40%);
   max-height: 100%;
   max-width: 85%;
   background: none; }
 
-.section2DivProductoInfo {
+.section2CajaProductoInfo {
   position: absolute;
   transform: translate(-10%, 110%);
   background: none; }
@@ -330,26 +325,26 @@ nav a {
   text-align: center;
   padding: 100px; }
 
-.section5Div {
+.section5Caja {
   padding: 50px 0; }
 
-.section5DivEquipo {
+.section5CajaEquipo {
   height: 25rem;
   width: 19rem;
   margin: 10px;
   padding: 40px;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
   border-radius: 0 0 50px 0; }
-  .section5DivEquipo h4 {
+  .section5CajaEquipo h4 {
     font-size: 1.4em;
     margin: 4px 0; }
-  .section5DivEquipo p {
+  .section5CajaEquipo p {
     margin: 4px 0; }
-  .section5DivEquipo button {
+  .section5CajaEquipo button {
     border: none;
     background: none; }
 
-.section5DivImg {
+.section5CajaImg {
   width: 150px;
   height: 150px; }
 
@@ -366,6 +361,19 @@ nav a {
   .section6Contactos p {
     font-weight: 600; }
 
+.section6Texto {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0; }
+  .section6Texto p {
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 0 10px 0 0;
+    margin: 0; }
+
+.section6mail {
+  font-weight: 300; }
+
 .section6Formulario {
   text-align: center;
   width: 45%;
@@ -380,15 +388,25 @@ nav a {
 /* FIN FORMULARIO DE CONTACTO */
 /* AJUSTES HOME MOBILE */
 @media (max-width: 1024px) {
-  .section2DivProducto {
+  .section1Caja {
+    height: auto;
+    width: 65%;
+    background: none; }
+  .section1Caja h1 {
+    font-size: 3em; }
+  .section2CajaProducto {
     height: 31em;
     width: 18em; }
   .section4 {
     display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center; } }
+    text-align: center; }
+  .section4Canalyoutube {
+    width: fit-content; }
+  .divisor3 {
+    display: inline-block; }
+  .section6Formulario {
+    width: 100%; } }
 
 @media (max-width: 768px) {
   .section1 {
@@ -397,30 +415,30 @@ nav a {
     align-items: center;
     justify-content: center;
     margin: 100px 0 0 0;
-    padding: 200px 100px; }
+    padding: 250px 100px; }
   .section1Imagen {
     align-items: center;
     height: 70%;
     width: 70%;
     margin: 0; }
-  .section1Div1 {
+  .section1Caja {
     width: 100%;
     text-align: center; }
   .divisor {
     width: 34%;
     margin: 20px auto; }
-  .section1Div3 {
+  .section1Redes {
     display: flex;
     justify-content: center;
     padding: 50px; }
-    .section1Div3 a {
+    .section1Redes a {
       margin: 0 10px; }
-  .section2Div {
+  .section2Caja {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center; }
-  .section2DivProducto {
+  .section2CajaProducto {
     margin: 100px 0; }
   .section3 {
     display: flex;
@@ -435,11 +453,13 @@ nav a {
     width: fit-content; }
   .divisor3 {
     display: inline-block; }
-  .section5Div {
+  .section5Caja {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center; }
+  .section5CajaEquipo {
+    margin: 20px 10px; }
   .section6 {
     display: flex;
     flex-flow: column;
@@ -450,46 +470,54 @@ nav a {
     text-align: center;
     margin: 0 0 50px 0;
     width: 100%; }
+  .section6Texto {
+    display: inline-block; }
+    .section6Texto p {
+      padding: 0; }
   .section6Formulario {
     width: 100%; } }
+
+@media (max-width: 575px) {
+  .section1 {
+    padding: 200px 50px; }
+  .section4Video {
+    width: 100%; }
+  .section3 h2 {
+    font-size: 2.1em; } }
 
 @media (max-width: 480px) {
   .section1 {
     padding: 100px 25px; }
     .section1 h1 {
       font-size: 2.3em; }
-  .section1Div1 {
+  .section1Caja {
     width: 100%;
     margin: auto; }
-  .section1Div3 {
+  .section1Redes {
     padding: 25px; }
   .section2 {
     padding: 25px; }
-  .section2DivProducto {
+  .section2CajaProducto {
     margin: 100px 0; }
-  .section2DivProductoInfo {
+  .section2CajaProductoInfo {
     height: 12em;
     width: 17.5em; }
   .section3 {
     padding: 25px; }
-    .section3 h2 {
-      font-size: 2.1em; }
   .section4 {
     padding: 100px 25px; }
-  .section4Video {
-    width: 100%; }
   .section5 {
     padding: 25px; }
-  .section5DivEquipo {
+  .section5CajaEquipo {
     padding: 15px;
     height: 22rem;
     width: 16rem; }
-    .section5DivEquipo h4 {
+    .section5CajaEquipo h4 {
       font-size: 1.3em; }
-    .section5DivEquipo p {
+    .section5CajaEquipo p {
       font-size: 1em; }
   .section6 {
-    padding: 40px; }
+    padding: 25px 25px 100px 25px; }
   .section6Contactos {
     width: 100%; }
   .section6Formulario {

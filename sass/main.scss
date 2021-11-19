@@ -86,7 +86,6 @@ p , li , a , form , input, q , button {
 
     &:hover {
         @extend %scale-boton;
-        background-color: $color-secundario;
     }
     
     & a {
@@ -94,14 +93,10 @@ p , li , a , form , input, q , button {
         font-size: 1.3em;
         color: $color-cuarto;
     }
-
-    &:hover a {
-        color: $color-princial;
-    }
 }
 
 .boton2 {
-    @include botones (10px 20px, 10px 0, $color-cuarto, none, $border-radius-boton);
+    @include botones (10px 20px, 10px 0, $color-princial, none, $border-radius-boton);
 
     &:hover {
         @extend %scale-boton;
@@ -110,7 +105,7 @@ p , li , a , form , input, q , button {
     & a {
         @extend %font-boton;
         font-size: 1.1em;
-        color: $color-princial;
+        color: $color-cuarto;
     }
 }
 
@@ -132,7 +127,6 @@ p , li , a , form , input, q , button {
 
     &:hover {
         @extend %scale-boton;
-        border: $color-princial solid 3px;
     }
 }
 
@@ -243,20 +237,10 @@ nav {
     }
 }
 
-@media (max-width:480px) {
-    .headerNav {
-        padding: 20px;
-    }
-
-    .headerNavLogo {
-        height: auto;
-        width: 70%;
-    }
-
+@media (max-width:575px) {
     .footer {
         @include mobile-column;
         text-align: center;
-        padding: 0;
     }
 
     .footerRedessociales {
@@ -265,6 +249,17 @@ nav {
         & a {
             margin: 10px;
         }
+    }
+}
+
+@media (max-width:480px) {
+    .headerNav {
+        padding: 20px;
+    }
+
+    .headerNavLogo {
+        height: auto;
+        width: 70%;
     }
 }
 /* FIN AJUSTES RESPONSIVE */
@@ -285,7 +280,7 @@ nav {
     padding: 100px;
 }
 
-.section1Div1 {
+.section1Caja {
     height: auto;
     width: 43%;
     background: none;
@@ -295,7 +290,7 @@ nav {
     margin: 0 0 0 10%;
 }
 
-.section1Div3 {
+.section1Redes {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -314,45 +309,45 @@ nav {
     padding: $padding-100;
 }
 
-.section2Div {
+.section2Caja {
     @extend %flexbox-evenly;
     padding: 10% 0 0 0;
 }
 
-.section2DivProducto {
+.section2CajaProducto {
     position: relative;
     height: 31em;
     width: 20em;
     padding: 30px;
     margin: 20px;
     border-radius: 0 0 50px 0;
-    background: $color-princial;
+    background: $color-secundario;
     box-shadow:  $box-shadow-1;
 
     & i {
-        color: $color-cuarto;
+        color: $color-texto;
         background:none;
         margin: 7px;
     }
 
     & p {
-        color: $color-cuarto;
+        color: $color-texto;
         margin: 7px;
     }
 
     & h4 {
     font-size: 1.5rem;
-    color: $color-cuarto;
+    color: $color-texto;
     margin: 7px;
     }
 
     & p {
-        color: $color-cuarto;
+        color: $color-texto;
         margin: 7px;
     }
 }
 
-.section2DivProductoImg {
+.section2CajaProductoImg {
     position: absolute;
     transform: translate(-50%,-40%);
     max-height: 100%;
@@ -360,7 +355,7 @@ nav {
     background: none;
 }
 
-.section2DivProductoInfo {
+.section2CajaProductoInfo {
     position: absolute;
     transform: translate(-10%,110%);
     background: none;
@@ -416,12 +411,12 @@ nav {
     padding: 100px;
 }
 
-.section5Div {
+.section5Caja {
     @extend %flexbox-evenly;
     padding: 50px 0;
 }
 
-.section5DivEquipo {
+.section5CajaEquipo {
     @extend %flexbox-column;
     height: 25rem;
     width: 19rem;
@@ -445,7 +440,7 @@ nav {
     }
 }
 
-.section5DivImg {
+.section5CajaImg {
     width: 150px;
     height: 150px;
 }
@@ -468,6 +463,23 @@ nav {
     }
 }
 
+.section6Texto {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+    
+    & p {
+        font-size: 1.4em;
+        font-weight: 600;
+        padding: 0 10px 0 0;
+        margin: 0;
+    }
+}
+
+.section6mail {
+    font-weight: 300;
+}
+
 .section6Formulario {
     text-align: center;
     width: 45%;
@@ -488,14 +500,37 @@ nav {
 
 /* AJUSTES HOME MOBILE */
 @media (max-width:1024px) {
-    .section2DivProducto {
+    .section1Caja {
+        height: auto;
+        width: 65%;
+        background: none;
+    }
+
+    .section1Caja h1 {
+        font-size: 3em;
+    }
+
+    .section2CajaProducto {
         height: 31em;
         width: 18em;
     }
 
     .section4 {
-        @include mobile-column;
+        display: flex;
+        flex-flow: column;
         text-align: center;
+    }
+
+    .section4Canalyoutube {
+        width: fit-content;
+    }
+
+    .divisor3 {
+        display: inline-block;
+    }
+
+    .section6Formulario {
+        width: 100%;
     }
 }
 
@@ -504,7 +539,7 @@ nav {
     .section1 {
         @include mobile-column;
         margin: 100px 0 0 0;
-        padding: 200px 100px;
+        padding: 250px 100px;
     }
 
     .section1Imagen {
@@ -514,7 +549,7 @@ nav {
         margin: 0;
     }
 
-    .section1Div1 {
+    .section1Caja {
         width: 100%;
         text-align: center;
     }
@@ -524,7 +559,7 @@ nav {
         margin: 20px auto;
     }
 
-    .section1Div3 {
+    .section1Redes {
         display: flex;
         justify-content: center;
         padding: 50px;
@@ -534,11 +569,11 @@ nav {
         }
     }
 
-    .section2Div {
+    .section2Caja {
         @include mobile-column;
     }
 
-    .section2DivProducto {
+    .section2CajaProducto {
         margin: 100px 0;
     }
 
@@ -559,8 +594,12 @@ nav {
     .divisor3 {
         display: inline-block;
     }
-    .section5Div {
+    .section5Caja {
         @include mobile-column;
+    }
+
+    .section5CajaEquipo {
+        margin: 20px 10px;
     }
 
     .section6 {
@@ -574,8 +613,30 @@ nav {
         width: 100%;
     }
 
+    .section6Texto {
+        display: inline-block;
+        & p {
+            padding: 0;
+        }
+    }
+
     .section6Formulario {
         width: 100%;
+    }
+}
+
+
+@media (max-width:575px) {
+    .section1 {
+        padding: 200px 50px;
+    }
+
+    .section4Video {
+        width: 100%;
+    }
+
+    .section3 h2 {
+        font-size: 2.1em;
     }
 }
 
@@ -589,12 +650,12 @@ nav {
         }
     }
 
-    .section1Div1 {
+    .section1Caja {
         width: 100%;
         margin: auto;
     }
 
-    .section1Div3 {
+    .section1Redes {
         padding: $padding-25;
     }
 
@@ -602,36 +663,28 @@ nav {
         padding: $padding-25;
     }
 
-    .section2DivProducto {
+    .section2CajaProducto {
         margin: 100px 0;
     }
 
-    .section2DivProductoInfo {
+    .section2CajaProductoInfo {
         height: 12em;
         width: 17.5em;
     }
 
     .section3 {
         padding: $padding-25;
-
-        & h2 {
-            font-size: 2.1em;
-        }
     }
 
     .section4 {
         padding: 100px 25px;
     }
 
-    .section4Video {
-        width: 100%;
-    }
-
     .section5 {
         padding: $padding-25;
     }
 
-    .section5DivEquipo {
+    .section5CajaEquipo {
         padding: 15px;
         height: 22rem;
         width: 16rem;
@@ -646,7 +699,7 @@ nav {
     }
 
     .section6 {
-        padding: 40px;
+        padding: 25px 25px 100px 25px;
     }
 
     .section6Contactos {

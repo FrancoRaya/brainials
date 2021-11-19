@@ -44,6 +44,13 @@ h4 {
 }
 
 /* DIVISORES DE TEXTO-TÍTULO */
+.divisor {
+    height: 4px;
+    width: 300px;
+    margin: 15px 0px 30px 0px ;
+    background-color: #fd3d38;
+}
+
 .divisor1 {
     display: inline-block;
     height: 2px;
@@ -94,7 +101,6 @@ h4 {
 .boton1:hover {
     transform: scale(1.2,1.2);
     transition: 1s;
-    background-color: #f5f5f5;
     box-shadow:  0px 0px 40px #bebebe;
 }
 
@@ -105,28 +111,24 @@ h4 {
     letter-spacing: 2px;
 }
 
-.boton1:hover a {
-    color: #fd3d38;
-}
-
 .boton2 {
     padding: 10px 20px;
     margin: 10px 0;
     border-radius: 3px;
-    background-color: #ffff;
+    background-color: #fd3d38;
     border: none;
 }
 
 .boton2:hover {
     transform: scale(1.2,1.2);
     transition: 1s;
-    box-shadow:  0px 0px 20px #313131;
+    box-shadow:  0px 0px 40px #bebebe;
 }
 
 .boton2 a {
     font-size: 1.1em;
     font-weight: 600;
-    color: #fd3d38;
+    color: white;
     letter-spacing: 2px;
 }
 
@@ -155,7 +157,6 @@ h4 {
 
 .boton4:hover {
     transform: scale(1.2,1.2);
-    border: #fd3d38 solid 3px;
     transition: 1s;
     box-shadow:  0px 0px 40px #bebebe;
 }
@@ -238,6 +239,7 @@ nav a {
     font-size: 3em;
     font-weight: 800;
     color: white;
+    margin: 0;
 }
 
 .footerRedessociales{
@@ -265,21 +267,11 @@ nav a {
     }
 }
 
-@media (max-width:480px) {
-    .headerNav {
-        padding: 20px;
-    }
-
-    .headerNavLogo {
-        height: auto;
-        width: 70%;
-    }
-
+@media (max-width:575px) {
     .footer {
         display: flex;
-        flex-direction: column;
+        flex-flow: column;
         text-align: center;
-        padding: 0;
     }
 
     .footerRedessociales {
@@ -288,6 +280,17 @@ nav a {
 
     .footerRedessociales a {
         margin: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .headerNav {
+        padding: 20px;
+    }
+
+    .headerNavLogo {
+        height: auto;
+        width: 70%;
     }
 }
 /* FIN AJUSTES RESPONSIVE */
@@ -308,7 +311,7 @@ nav a {
     padding: 100px;
 }
 
-.section1Div1 {
+.section1Caja {
     height: auto;
     width: 43%;
     background: none;
@@ -318,21 +321,14 @@ nav a {
     margin: 0 0 0 10%;
 }
 
-.divisor {
-    height: 4px;
-    width: 300px;
-    margin: 15px 0px 30px 0px ;
-    background-color: #fd3d38;
-}
-
-.section1Div3 {
+.section1Redes {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 0 100px 0 0;
 }
 
-.section1Div3 a {
+.section1Redes a {
     margin: 0 0 0 15px;
 }
 /* FIN HEADER */
@@ -348,41 +344,38 @@ nav a {
     padding: 100px;
 }
 
-.section2Div {
+.section2Caja {
     display: flex;
     justify-content: space-evenly;
     padding: 10% 0 0 0;
 }
 
-.section2DivProducto {
+.section2CajaProducto {
     position: relative;
     height: 31em;
     width: 20em;
     padding: 30px;
     margin: 20px;
     border-radius: 0 0 50px 0;
-    background: #fd3d38;
-    box-shadow:  20px 20px 60px #bebebe;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
 }
 
-.section2DivProducto i {
-    color: white;
+.section2CajaProducto i {
     background:none;
     margin: 7px;
 }
 
-.section2DivProducto h4 {
+.section2CajaProducto h4 {
     font-size: 1.5rem;
-    color: white;
     margin: 7px;
 }
 
-.section2DivProducto p {
-    color: white;
+.section2CajaProducto p {
     margin: 7px;
 }
 
-.section2DivProductoImg {
+.section2CajaProductoImg {
     position: absolute;
     transform: translate(-50%,-40%);
     max-height: 100%;
@@ -390,7 +383,7 @@ nav a {
     background: none;
 }
 
-.section2DivProductoInfo {
+.section2CajaProductoInfo {
     position: absolute;
     transform: translate(-10%,110%);
     background: none;
@@ -448,13 +441,13 @@ nav a {
     padding: 100px;
 }
 
-.section5Div {
+.section5Caja {
     display: flex;
     justify-content: space-evenly;
     padding: 50px 0;
 }
 
-.section5DivEquipo {
+.section5CajaEquipo {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -468,21 +461,21 @@ nav a {
     border-radius: 0 0 50px 0;
 }
 
-.section5DivImg {
+.section5CajaImg {
     width: 150px;
     height: 150px;
 }
 
-.section5DivEquipo h4{
+.section5CajaEquipo h4{
     font-size: 1.4em;
     margin: 4px 0;
 }
 
-.section5DivEquipo p {
+.section5CajaEquipo p {
     margin: 4px 0;
 }
 
-.section5DivEquipo button {
+.section5CajaEquipo button {
     border: none;
     background: none;
 }
@@ -501,8 +494,21 @@ nav a {
     justify-content: space-evenly;
 }
 
-.section6Contactos p {
+.section6Texto {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.section6Texto p {
+    font-size: 1.4em;
     font-weight: 600;
+    padding: 0 10px 0 0;
+    margin: 0;
+}
+
+.section6mail {
+    font-weight: 300;
 }
 
 .section6Formulario {
@@ -526,15 +532,37 @@ nav a {
 
 /* AJUSTES HOME MOBILE */
 @media (max-width:1024px) {
-    .section2DivProducto {
+    .section1Caja {
+        height: auto;
+        width: 65%;
+        background: none;
+    }
+
+    .section1Caja h1 {
+        font-size: 3em;
+    }
+
+    .section2CajaProducto {
         height: 31em;
         width: 18em;
     }
 
     .section4 {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column;
         text-align: center;
+    }
+
+    .section4Canalyoutube {
+        width: fit-content;
+    }
+
+    .divisor3 {
+        display: inline-block;
+    }
+
+    .section6Formulario {
+        width: 100%;
     }
 }
 
@@ -546,7 +574,7 @@ nav a {
         align-items: center;
         justify-content: center;
         margin: 100px 0 0 0;
-        padding: 200px 100px;
+        padding: 250px 100px;
     }
 
     .section1Imagen {
@@ -556,7 +584,7 @@ nav a {
         margin: 0;
     }
 
-    .section1Div1 {
+    .section1Caja {
         width: 100%;
         text-align: center;
     }
@@ -566,22 +594,22 @@ nav a {
         margin: 20px auto;
     }
 
-    .section1Div3 {
+    .section1Redes {
         display: flex;
         justify-content: center;
         padding: 50px;
     }
 
-    .section1Div3 a {
+    .section1Redes a {
         margin: 0 10px;
     }
 
-    .section2Div {
+    .section2Caja {
         display: flex;
         flex-flow: column wrap;
     }
 
-    .section2DivProducto {
+    .section2CajaProducto {
         margin: 100px 0;
     }
 
@@ -592,7 +620,7 @@ nav a {
 
     .section4 {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column;
         text-align: center;
     }
 
@@ -603,16 +631,21 @@ nav a {
     .divisor3 {
         display: inline-block;
     }
-    .section5Div {
+
+    .section5Caja {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
     }
 
+    .section5CajaEquipo {
+        margin: 30px 10px;
+    }
+
     .section6 {
         display: flex;
         justify-content: center;
-        flex-flow: column wrap;
+        flex-flow: column;
         padding: 100px;
     }
 
@@ -622,18 +655,36 @@ nav a {
         width: 100%;
     }
 
-    .section6Formulario {
-        width: 100%;
+    .section6Texto {
+        display: inline-block;
+    }
+
+    .section6Texto p {
+        padding: 0;
     }
 }
 
 
-@media (max-width:480px) {
+@media (max-width:575px) {
     .section1 {
-        padding: 100px 25px;
+        padding: 250px 50px;
     }
 
-    .section1Div1 {
+    .section4Video {
+        width: 100%;
+    }
+
+    .section3 h2 {
+        font-size: 2.1em;
+    }
+}
+
+@media (max-width:480px) {
+    .section1 {
+        padding: 50px 25px;
+    }
+
+    .section1Caja {
         width: 100%;
         margin: auto;
     }
@@ -642,7 +693,7 @@ nav a {
         font-size: 2.3em;
     }
 
-    .section1Div3 {
+    .section1Redes {
         padding: 25px;
     }
 
@@ -650,11 +701,11 @@ nav a {
         padding: 25px;
     }
 
-    .section2DivProducto {
+    .section2CajaProducto {
         margin: 100px 0;
     }
 
-    .section2DivProductoInfo {
+    .section2CajaProductoInfo {
         height: 12em;
         width: 17.5em;
     }
@@ -663,38 +714,30 @@ nav a {
         padding: 25px;
     }
 
-    .section3 h2 {
-        font-size: 2.1em;
-    }
-
     .section4 {
         padding: 100px 25px;
-    }
-
-    .section4Video {
-        width: 100%;
     }
 
     .section5 {
         padding: 25px;
     }
 
-    .section5DivEquipo {
+    .section5CajaEquipo {
         padding: 15px;
         height: 22rem;
         width: 16rem;
     }
 
-    .section5DivEquipo h4 {
+    .section5CajaEquipo h4 {
         font-size: 1.3em;
     }
 
-    .section5DivEquipo p {
+    .section5CajaEquipo p {
         font-size: 1em;
     }
 
     .section6 {
-        padding: 40px;
+        padding: 25px 25px 100px 25px;
     }
 
     .section6Contactos {
@@ -1107,21 +1150,6 @@ nav a {
     padding: 20px;
 }
 /* FIN BENEFICIOS */
-
-/* CONTACTOS */
-.ebooksContactos {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 50px 100px;
-}
-
-.ebooksContactosRedes{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-/* FIN CONTACTOS */
 
 
 /* AJUSTES MOBILE */
