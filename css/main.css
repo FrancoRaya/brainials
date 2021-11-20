@@ -41,6 +41,9 @@ p, li, a, form, input, q, button {
   background: none;
   text-decoration: none; }
 
+a {
+  color: #fd3d38; }
+
 h1 {
   font-size: 4em; }
 
@@ -134,13 +137,9 @@ p, li, a, form, input, q, button {
   background-color: #fd3d38;
   border: solid 3px #fd3d38;
   border-radius: 3px; }
-  .boton6:hover {
-    background-color: #f5f5f5; }
   .boton6 a {
     font-size: 1.2em;
     color: #ffff; }
-  .boton6:hover a {
-    color: #fd3d38; }
 
 /* FIN BOTONES */
 /* BODY */
@@ -148,7 +147,6 @@ body {
   width: 100%;
   background-color: #f5f5f5; }
 
-/* FIN BODY */
 /* HEADER */
 .headerNav {
   padding: 20px 50px;
@@ -165,10 +163,20 @@ body {
   .headerNavLink:hover {
     color: #fd3d38; }
 
+.nav-item {
+  display: flex; }
+
+.offcanvas-header {
+  background-color: #f5f5f5; }
+
+.offcanvas-body {
+  background-color: #f5f5f5; }
+
 nav a {
   color: #212032; }
 
 /* FIN HEADER */
+/* FIN BODY */
 /* FOOTER */
 .footer {
   display: flex;
@@ -358,8 +366,6 @@ nav a {
   margin: 0 100px 0 0;
   width: 35em;
   justify-content: space-evenly; }
-  .section6Contactos p {
-    font-weight: 600; }
 
 .section6Texto {
   display: flex;
@@ -584,6 +590,11 @@ nav a {
   font-weight: 800;
   color: #ffff; }
 
+.boton2 {
+  background-color: #ffff; }
+  .boton2 a {
+    color: #fd3d38; }
+
 .apoyarSection3ClubLista {
   display: flex;
   flex-flow: column wrap;
@@ -614,13 +625,24 @@ nav a {
     color: #212032; }
 
 .apoyarSection4Acordion {
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff; }
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
+  margin: 0 0 0 50px;
+  width: 100rem; }
 
 .apoyarSection4Button {
   font-weight: 700;
-  font-size: 0.3em;
-  color: #0F0F18;
+  font-size: 0.35em;
+  color: #212032;
   background-color: #ffff; }
+
+.accordion-button:not(.collapsed) {
+  color: #fd3d38;
+  background-color: #f5f5f5; }
+
+.accordion-button:focus {
+  z-index: none;
+  border-color: none;
+  box-shadow: none; }
 
 .apoyarSection4Item {
   background-color: #ffff; }
@@ -652,7 +674,10 @@ nav a {
     align-items: center;
     justify-content: center; }
   .apoyarSection4Caja {
-    margin: 0 0 50px; } }
+    margin: 0 0 50px; }
+  .apoyarSection4Acordion {
+    margin: 0;
+    width: fit-content; } }
 
 @media (max-width: 480px) {
   .apoyarSection1 {
@@ -685,7 +710,9 @@ nav a {
   .apoyarSection4 {
     padding: 25px 25px 75px; }
     .apoyarSection4 h2 {
-      font-size: 2em; } }
+      font-size: 2em; }
+  .apoyarSection4Button {
+    font-size: 0.5em; } }
 
 /* FIN AJUSTES APOYAR MOBILE */
 /* FIN PÁGINA APOYAR */
@@ -728,7 +755,8 @@ nav a {
 .ebooksSection3Oferta {
   height: 40em;
   width: 60em;
-  background-color: #0F0F18; }
+  background-color: #0F0F18;
+  border-radius: 3px; }
   .ebooksSection3Oferta img {
     width: 50%;
     height: auto; }
@@ -759,7 +787,8 @@ nav a {
 /* FIN OFERTAS */
 /* SOBRE LOS EBOOKS */
 .ebooksSection4 {
-  padding: 100px; }
+  padding: 100px;
+  align-items: center; }
 
 .ebooksSection4Caja {
   width: 30em;
@@ -768,10 +797,9 @@ nav a {
 
 .ebooksSection4Img {
   display: flex;
-  justify-content: center;
-  width: fit-content; }
+  justify-content: center; }
   .ebooksSection4Img img {
-    width: 55%;
+    width: 80%;
     height: auto; }
 
 /* FIN SOBRE LOS EBOOKS */
@@ -801,6 +829,11 @@ nav a {
 
 /* FIN CONTACTOS */
 /* AJUSTES MOBILE */
+@media (max-width: 1024px) {
+  .ebooksSection4Img img {
+    width: auto;
+    height: 70%; } }
+
 @media (max-width: 768px) {
   .ebooksSection1 {
     width: auto; }

@@ -198,6 +198,7 @@ h4 {
 }
 /* FIN BOTONES */
 
+/* BODY */
 body {
     width: 100%;
     overflow-x:hidden;
@@ -223,9 +224,15 @@ body {
     color: #fd3d38;
 }
 
+.nav-item {
+    display: flex;
+}
+
 nav a {
     color: #212032;
 }
+/* FIN BODY */
+
 
 /* FOOTER */
 .footer {
@@ -880,6 +887,8 @@ nav a {
     .apoyarSection4Acordion {
         box-shadow:  20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
+        margin: 0 0 0 50px;
+        width: 100rem;
     }
 
     .apoyarSection4Button {
@@ -934,6 +943,11 @@ nav a {
 
     .apoyarSection4Caja {
         margin: 0 0 50px;
+    }
+
+    .apoyarSection4Acordion {
+        margin: 0;
+        width: fit-content;
     }
 }
 

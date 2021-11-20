@@ -20,6 +20,10 @@ p , li , a , form , input, q , button {
     text-decoration: none;
 }
 
+a {
+    color: $color-princial;
+}
+
 h1 {
     font-size: map-get($map: $tamaño-fuente, $key: titulo1);
 }
@@ -145,17 +149,12 @@ p , li , a , form , input, q , button {
 
     &:hover {
         @extend %scale-boton;
-        background-color: $color-secundario;
     }
 
     & a {
         @extend %font-boton;
         font-size: 1.2em;
         color: $color-cuarto;
-    }
-
-    &:hover a {
-        color: $color-princial;
     }
 }
 /* FIN BOTONES */
@@ -166,7 +165,6 @@ body {
     width: 100%;
     background-color: $color-secundario;
 }
-/* FIN BODY */
 
 
 /* HEADER */
@@ -190,12 +188,25 @@ body {
     }
 }
 
+.nav-item {
+    display: flex;
+}
+
+.offcanvas-header {
+    background-color: $color-secundario;
+}
+
+.offcanvas-body {
+    background-color: $color-secundario;
+}
+
 nav {
     a {
         color: $color-texto;
     }
 } 
 /* FIN HEADER */
+/* FIN BODY */
 
 
 /* FOOTER */
@@ -457,10 +468,6 @@ nav {
     margin: 0 100px 0 0;
     width: 35em;
     justify-content: space-evenly;
-
-    & p {
-        font-weight: 600;
-    }
 }
 
 .section6Texto {
@@ -793,6 +800,13 @@ nav {
     color: $color-cuarto;
 }
 
+.boton2 {
+    background-color: $color-cuarto;
+
+    & a {
+        color: $color-princial;
+    }
+}
 .apoyarSection3ClubLista {
     display: flex;
     flex-flow: column wrap;
@@ -836,13 +850,26 @@ nav {
 
 .apoyarSection4Acordion {
     box-shadow:  $box-shadow;
+    margin: 0 0 0 50px;
+    width: 100rem;
 }
 
 .apoyarSection4Button {
     font-weight: 700;
-    font-size: 0.3em;
-    color: $color-terciario;
+    font-size: 0.35em;
+    color: $color-texto;
     background-color: $color-cuarto;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $color-princial;
+    background-color: $color-secundario;
+}
+
+.accordion-button:focus {
+    z-index: none;
+    border-color: none;
+    box-shadow: none;
 }
 
 .apoyarSection4Item {
@@ -890,6 +917,11 @@ nav {
 
     .apoyarSection4Caja {
         margin: 0 0 50px;
+    }
+
+    .apoyarSection4Acordion {
+        margin: 0;
+        width: fit-content;
     }
 }
 
@@ -947,6 +979,10 @@ nav {
         & h2 {
             font-size: 2em;
         }
+    }
+
+    .apoyarSection4Button {
+        font-size: 0.5em;
     }
 }
 /* FIN AJUSTES APOYAR MOBILE */
@@ -1013,6 +1049,7 @@ nav {
     height: 40em;
     width: 60em;
     background-color: $color-terciario;
+    border-radius: $border-radius-boton;
 
     & img {
         width: 50%;
@@ -1055,6 +1092,7 @@ nav {
 .ebooksSection4 {
     @extend %flexbox-evenly;
     padding: $padding-100;
+    align-items: center;
 }
 
 .ebooksSection4Caja {
@@ -1066,10 +1104,9 @@ nav {
 .ebooksSection4Img {
     display: flex;
     justify-content: center;
-    width: fit-content;
 
     & img {
-        width: 55%;
+        width: 80%;
         height: auto;
     }
 }
@@ -1110,6 +1147,16 @@ nav {
 
 
 /* AJUSTES MOBILE */
+@media (max-width: 1024px) {
+    .ebooksSection4Img {
+        & img {
+            width: auto;
+            height: 70%;
+        }
+    }
+}
+
+
 @media (max-width: 768px) {
     .ebooksSection1 {
         width: auto;
