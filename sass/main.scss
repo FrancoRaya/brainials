@@ -22,6 +22,10 @@ p , li , a , form , input, q , button {
 
 a {
     color: $color-princial;
+
+    &:hover {
+        color: $color-texto;
+    }
 }
 
 h1 {
@@ -1342,7 +1346,6 @@ nav {
 .nuestrainiciativaSection4Caja {
     @extend %flexbox-evenly;
     flex-flow: row wrap;
-    padding: $padding-100;
 
     & img {
         width: 40%;
@@ -1350,18 +1353,19 @@ nav {
     }
 }
 
-.nuestrainiciativaSection4CajaEquipo {
+.nuestrainiciativaSection4Equipo {
     @extend %flexbox-column;
-    width: 40%;
+    width: 25rem;
     margin: 30px;
     padding: 40px;
     box-shadow:  $box-shadow;
     border-radius: 0 0 60px 0;
+}
 
-    & q {
-        display: inline-block;
-        text-align: left;
-    }
+.nuestrainiciativaSection4Cita {
+    text-align: left;
+    font-style: italic;
+    font-size: 1em;
 }
 /* FIN EQUIPO */
 
@@ -1374,7 +1378,7 @@ nav {
     padding: 50px 100px;
     background-color: $color-terciario;
 
-    & h3{
+    & h3 {
         color: white;
         margin: 0 30px 0 0;
     }
@@ -1387,9 +1391,18 @@ nav {
 
 
 /* AJUSTES MOBILE */
+@media (max-width: 1024px) {
+
+}
+
 @media (max-width: 768px) {
     .nuestrainiciativaSection2 {
         padding: $padding-100;
+
+        & img {
+            width: 30%;
+            height: auto;
+        }
     }
     
     .nuestrainiciativaBanner {
@@ -1405,23 +1418,18 @@ nav {
         @include mobile-column;
     }
 
-    .nuestrainiciativaSection4CajaEquipo {
-        width: fit-content;
+    .nuestrainiciativaSection4Equipo {
+        margin: 40px 0;
     }
 }
 
-
-@media (max-width: 480px) {
-    .nuestrainiciativaSection1 {
-        padding: 150px 25px 0;
+@media (max-width: 575px) {
+    .nuestrainiciativaSection4Caja {
+        padding: 0;
     }
 
-    .nuestrainiciativaSection2 {
-        padding: $padding-25;
-    }
-
-    .nuestrainiciativaBanner {
-        padding: $padding-25;
+    .nuestrainiciativaSection4Equipo {
+        padding: 30px;
     }
 
     .nuestrainiciativaBanner1 {
@@ -1430,16 +1438,47 @@ nav {
         padding: $padding-25;
 
         & h3 {
+            font-size: 1.5em;
             margin: 0;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .nuestrainiciativaSection1 {
+        padding: 150px 25px 0;
+        & h1 {
+            font-size: map-get($map: $tamaño-fuente, $key: titulo2);
+        }
+    }
+
+    .nuestrainiciativaSection2 {
+        padding: $padding-25;
+
+        & h2 {
+            font-size: 2.3em;
+        }
+
+        & img {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .nuestrainiciativaBanner {
+        padding: $padding-25;
     }
 
     .nuestrainiciativaSection4 {
         padding: $padding-25;
+
+        & h2 {
+            font-size: 2.5em;
+        }
     }
 
-    .nuestrainiciativaSection4Caja {
-        padding: 0;
+    .nuestrainiciativaSection4Equipo {
+        width: 17rem;
     }
 }
 /* FIN AJUSTES MOBILE */
@@ -1473,7 +1512,7 @@ nav {
     border-radius: 0 0 70px 0;
     box-shadow: $box-shadow;
 
-    &o form {
+    & form {
         text-align: left;
     }
 }
