@@ -296,7 +296,7 @@ nav a {
 
 .section2CajaProductoInfo {
   position: absolute;
-  transform: translate(-10%, 110%);
+  transform: translate(-10%, 100%);
   background: none; }
 
 /* FIN PRODUCTOS DE LA TIENDA */
@@ -590,9 +590,9 @@ nav a {
   font-weight: 800;
   color: #ffff; }
 
-.boton2 {
+.colorboton2 {
   background-color: #ffff; }
-  .boton2 a {
+  .colorboton2 a {
     color: #fd3d38; }
 
 .apoyarSection3ClubLista {
