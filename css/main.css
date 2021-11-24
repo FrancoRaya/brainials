@@ -249,12 +249,12 @@ nav a {
 .section1Imagen {
   margin: 0 0 0 10%; }
 
-.section1Redes {
+.Redes {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 0 100px 0 0; }
-  .section1Redes a {
+  .Redes a {
     margin: 0 0 0 15px; }
 
 /* FIN HEADER */
@@ -435,11 +435,11 @@ nav a {
   .divisor {
     width: 34%;
     margin: 20px auto; }
-  .section1Redes {
+  .Redes {
     display: flex;
     justify-content: center;
     padding: 50px; }
-    .section1Redes a {
+    .Redes a {
       margin: 0 10px; }
   .section2Caja {
     display: flex;
@@ -501,7 +501,7 @@ nav a {
   .section1Caja {
     width: 100%;
     margin: auto; }
-  .section1Redes {
+  .Redes {
     padding: 25px; }
   .section2 {
     padding: 25px; }
