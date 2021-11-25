@@ -9,14 +9,14 @@
 }
 
 h1 , h2 , h3 , h4 {
+    background: none;
     font-family: 'Crimson Pro', serif;
     font-weight: 900;
-    background: none;
 }
 
 p , li , a , form , input, q , button {
-    font-family: 'Poppins', sans-serif;
     background: none;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
@@ -50,10 +50,10 @@ p , li , a , form , input, q , button {
 
 /* DIVISORES DE TEXTO-TÍTULO */
 .divisor {
-    height: 4px;
-    width: 300px;
-    margin: 15px 0px 30px 0px ;
     background-color: $color-princial;
+    height: 4px;
+    margin: 15px 0px 30px 0px ;
+    width: 300px;
 }
 
 .divisor1 {
@@ -72,18 +72,18 @@ p , li , a , form , input, q , button {
 }
 
 .divisor4 {
+    background-color: $color-terciario;
     display: inline-block;
     height: 1px;
-    width: 70px;
     margin: 7px 0px;
-    background-color: $color-terciario;
+    width: 70px;
 }
 
 .divisor5 {
+    background-color: $color-princial;
     display: inline-block;
     height: 170px;
     width: 10px;
-    background-color: $color-princial;
 }
 /* FIN DIVISORES DE TEXTO-TÍTULO */
 
@@ -98,8 +98,8 @@ p , li , a , form , input, q , button {
     
     & a {
         @extend %font-boton;
-        font-size: 1.3em;
         color: $color-cuarto;
+        font-size: 1.3em;
     }
 }
 
@@ -112,19 +112,19 @@ p , li , a , form , input, q , button {
     
     & a {
         @extend %font-boton;
-        font-size: 1.1em;
         color: $color-cuarto;
+        font-size: 1.1em;
     }
 }
 
 .boton3 {
-    margin: 25px 0;
     border: none;
+    margin: 25px 0;
 
     & a {
         @extend %font-boton;
-        font-size: 1.2em;
         color: $color-princial;
+        font-size: 1.2em;
     }
 }
 
@@ -143,8 +143,8 @@ p , li , a , form , input, q , button {
 
     & a{
         @extend %font-boton;
-        font-size: 1em;
         color: $color-princial;
+        font-size: 1em;
     }
 }
 
@@ -157,8 +157,8 @@ p , li , a , form , input, q , button {
 
     & a {
         @extend %font-boton;
-        font-size: 1.2em;
         color: $color-cuarto;
+        font-size: 1.2em;
     }
 }
 /* FIN BOTONES */
@@ -166,15 +166,17 @@ p , li , a , form , input, q , button {
 
 /* BODY */
 body {
-    width: 100%;
     background-color: $color-secundario;
+    width: 100%;
+
 }
 
 
 /* HEADER */
 .headerNav {
-    padding: 20px 50px;
     background-color: $color-secundario;
+    padding: 20px 50px;
+
 }
 
 .headerNavIcon {
@@ -215,22 +217,22 @@ nav {
 
 /* FOOTER */
 .footer {
-    display: flex;
     align-items: center;
     background-color: $color-terciario;
+    display: flex;
     padding: 30px 100px;
 
     & p {
+        color: $color-cuarto;
         font-size: 3em;
         font-weight: 800;
-        color: $color-cuarto;
     }
 }
 
 .footerRedessociales{
+    background: none;
     display: flex;
     justify-content: flex-end;
-    background: none;
     width: 100%;
 
     & a {
@@ -287,18 +289,19 @@ nav {
 /* HOME */
 /* HEADER */
 .section1 {
-    display: flex;
     align-items: center;
-    justify-content: left;
     background-color: $color-secundario;
+    display: flex;
     height: 900px;
+    justify-content: left;
     padding: 100px;
 }
 
 .section1Caja {
+    background: none;
     height: auto;
     width: 43%;
-    background: none;
+
 }
 
 .section1Imagen {
@@ -306,8 +309,8 @@ nav {
 }
 
 .Redes {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: flex-end;
     padding: 0 100px 0 0;
 
@@ -330,18 +333,18 @@ nav {
 }
 
 .section2CajaProducto {
-    position: relative;
-    height: 31em;
-    width: 20em;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 0 0 50px 0;
     background: $color-secundario;
+    border-radius: 0 0 50px 0;
     box-shadow:  $box-shadow-1;
+    height: 31em;
+    margin: 20px;
+    padding: 30px;
+    position: relative;
+    width: 20em;
 
     & i {
-        color: $color-texto;
         background:none;
+        color: $color-texto;
         margin: 7px;
     }
 
@@ -351,9 +354,9 @@ nav {
     }
 
     & h4 {
-    font-size: 1.5rem;
-    color: $color-texto;
-    margin: 7px;
+        color: $color-texto;
+        font-size: 1.5rem;
+        margin: 7px;
     }
 
     & p {
@@ -363,17 +366,17 @@ nav {
 }
 
 .section2CajaProductoImg {
-    position: absolute;
-    transform: translate(-50%,-40%);
+    background: none;
     max-height: 100%;
     max-width: 85%;
-    background: none;
+    position: absolute;
+    transform: translate(-50%,-40%);
 }
 
 .section2CajaProductoInfo {
+    background: none;
     position: absolute;
     transform: translate(-10%,100%);
-    background: none;
 }
 /* FIN PRODUCTOS DE LA TIENDA */
 
@@ -381,17 +384,18 @@ nav {
 /* PROPÓSITO */
 .section3 {
     @extend %flexbox-column;
-    padding: $padding-100;
     background-color: $color-terciario;
+    padding: $padding-100;
+
 
     & h2 {
-        text-align: center;
         color: $color-cuarto;
+        text-align: center;
     }
 
     & i {
-        color: $color-cuarto;
         background:none;
+        color: $color-cuarto;
     }
 
     p {
@@ -400,10 +404,10 @@ nav {
 }
 
 .section3Image {
+    background: none;
+    margin: 50px 0 0 0;
     max-height: 30%;
     max-width: 30%;
-    margin: 50px 0 0 0;
-    background: none;
 }
 /* FIN PROPÓSITO */
 
@@ -433,12 +437,12 @@ nav {
 
 .section5CajaEquipo {
     @extend %flexbox-column;
-    height: 25rem;
-    width: 19rem;
-    margin: 10px;
-    padding: 40px;
-    box-shadow:  $box-shadow;
     border-radius: 0 0 50px 0;
+    box-shadow:  $box-shadow;
+    height: 25rem;
+    margin: 10px;
+    width: 19rem;
+    padding: 40px;
 
     & h4{
         font-size: 1.4em;
@@ -450,14 +454,15 @@ nav {
     }
     
     & button {
-        border: none;
         background: none;
+        border: none;
+
     }
 }
 
 .section5CajaImg {
-    width: 150px;
     height: 150px;
+    width: 150px;
 }
 /* FIN EQUIPO BRAINIALS */
 
@@ -469,21 +474,21 @@ nav {
 }
 
 .section6Contactos {
+    justify-content: space-evenly;
     margin: 0 100px 0 0;
     width: 35em;
-    justify-content: space-evenly;
 }
 
 .section6Texto {
-    display: flex;
     align-items: center;
+    display: flex;
     margin: 0 0 20px 0;
     
     & p {
         font-size: 1.4em;
         font-weight: 600;
-        padding: 0 10px 0 0;
         margin: 0;
+        padding: 0 10px 0 0;
     }
 }
 
@@ -492,11 +497,11 @@ nav {
 }
 
 .section6Formulario {
+    border-radius: 0 0 70px 0;
+    box-shadow: $box-shadow;
+    padding: 50px;
     text-align: center;
     width: 45%;
-    padding: 50px;
-    box-shadow:  $box-shadow;
-    border-radius: 0 0 70px 0;
 
     & form {
         text-align: left;
@@ -512,9 +517,9 @@ nav {
 /* AJUSTES HOME MOBILE */
 @media (max-width:1024px) {
     .section1Caja {
+        background: none;
         height: auto;
         width: 65%;
-        background: none;
     }
 
     .section1Caja h1 {
@@ -556,18 +561,18 @@ nav {
     .section1Imagen {
         align-items: center;
         height: 70%;
-        width: 70%;
         margin: 0;
+        width: 70%;
     }
 
     .section1Caja {
-        width: 100%;
         text-align: center;
+        width: 100%;
     }
 
     .divisor {
-        width: 34%;
         margin: 20px auto;
+        width: 34%;
     }
 
     .Redes {
@@ -619,8 +624,8 @@ nav {
     }
 
     .section6Contactos {
-        text-align: center;
         margin: 0 0 50px 0;
+        text-align: center;
         width: 100%;
     }
 
@@ -662,8 +667,8 @@ nav {
     }
 
     .section1Caja {
-        width: 100%;
         margin: auto;
+        width: 100%;
     }
 
     .Redes {
@@ -696,8 +701,8 @@ nav {
     }
 
     .section5CajaEquipo {
-        padding: 15px;
         height: 22rem;
+        padding: 15px;
         width: 16rem;
 
         & h4 {
@@ -746,14 +751,14 @@ nav {
 }
 
 .apoyarSection2Caja {
-    text-align: center;
     background-color: $color-princial;
-    margin: 15px;
-    padding: 30px;
-    width: 28%;
-    height: auto;
     border-radius: 0 0 60px 0;
     box-shadow: $box-shadow-1;
+    height: auto;
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 28%;
 
     & h3 {
         color: $color-cuarto;
@@ -769,9 +774,9 @@ nav {
 /* CLUB BRAINAIALS */
 .apoyarSection3 {
     @extend %flexbox-column;
-    padding: 100px 200px;
     background-color: $color-terciario;
     color: $color-cuarto;
+    padding: 100px 200px;
 }
 
 .apoyarSection3Titulo {
@@ -784,24 +789,24 @@ nav {
 }
 
 .apoyarSection3Club {
-    text-align: center;
     background-color: $color-princial;
+    border-radius: 0 0 80px 0;
+    box-shadow: 20px 20px 60px $color-texto;
+    height: 28em;
     padding: 25px;
     width: 400px;
-    height: 28em;
-    border-radius: 0 0 80px 0;
-    box-shadow:  20px 20px 60px $color-texto;
+    text-align: center;
 }
 
 .apoyarSection3ClubTitulo {
-    font-style: italic;
     color: $color-cuarto;
+    font-style: italic;
 }
 
 .apoyarSection3ClubTexto {
+    color: $color-cuarto;
     font-size: 3em;
     font-weight: 800;
-    color: $color-cuarto;
 }
 
 .colorboton2 {
@@ -813,17 +818,17 @@ nav {
 }
 
 .apoyarSection3ClubLista {
+    align-content: center;
+    background: none; 
     display: flex;
     flex-flow: column wrap;
-    align-content: center; 
-    background: none;
     padding: 0 0 20px 0;
 
     & p {
-        display: block;
-        text-align: left;
         color: $color-cuarto;
+        display: block;
         font-size: 1.2em;
+        text-align: left;
     }
 }
 
@@ -860,21 +865,21 @@ nav {
 }
 
 .apoyarSection4Button {
+    background-color: $color-cuarto;
+    color: $color-texto;
     font-weight: 700;
     font-size: 0.35em;
-    color: $color-texto;
-    background-color: $color-cuarto;
 }
 
 .accordion-button:not(.collapsed) {
-    color: $color-princial;
     background-color: $color-secundario;
+    color: $color-princial;
 }
 
 .accordion-button:focus {
-    z-index: none;
     border-color: none;
     box-shadow: none;
+    z-index: none;
 }
 
 .apoyarSection4Item {
@@ -974,8 +979,8 @@ nav {
     } 
 
     .apoyarSection3Beneficios {
-        padding: 0;
         margin: 40px 0;
+        padding: 0;
     }
 
     .apoyarSection4 {
@@ -1015,10 +1020,10 @@ nav {
 .ebooksSection2Producto {
     @extend %flexbox-column;
     height: auto;
-    width: 30%;
-    padding: 20px;
     border-radius: 10px;
     box-shadow:  $box-shadow;
+    padding: 20px;
+    width: 30%;
 
     & h3 {
         font-size: 1.5em;
@@ -1041,8 +1046,8 @@ nav {
 /* OFERTAS */
 .ebooksSection3 {
     @extend %flexbox-column;
-    padding: $padding-100;
     background-color: $color-terciario;
+    padding: $padding-100;
 
     & h2 {
         color: $color-cuarto;
@@ -1051,14 +1056,14 @@ nav {
 
 .ebooksSection3Oferta {
     @extend %flexbox-column;
-    height: 40em;
-    width: 60em;
     background-color: $color-terciario;
     border-radius: $border-radius-boton;
+    height: 40em;
+    width: 60em;
 
     & img {
-        width: 50%;
         height: auto;
+        width: 50%;
     }
     
     & h3 {
@@ -1066,29 +1071,29 @@ nav {
     }
     
     & div {
-        display: flex;
         background-color: $color-terciario;
+        display: flex;
         padding: 0;
     }
 }
 
 .ebooksSection3Rebaja {
+    background-color: $color-terciario;
+    color: $color-cuarto;
     font-size: 1.5rem;
-    text-decoration: line-through;
+    margin: 0;
     justify-content: center;
     padding: 15px;
-    margin: 0;
-    color: $color-cuarto;
-    background-color: $color-terciario;
+    text-decoration: line-through;
 }
 
 .ebooksSection3Precio {
+    color: $color-cuarto;
+    background-color: $color-terciario;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 15px;
     margin: 0;
-    color: $color-cuarto;
-    background-color: $color-terciario;
 }
 /* FIN OFERTAS */
 
@@ -1096,14 +1101,14 @@ nav {
 /* SOBRE LOS EBOOKS */
 .ebooksSection4 {
     @extend %flexbox-evenly;
-    padding: $padding-100;
     align-items: center;
+    padding: $padding-100;
 }
 
 .ebooksSection4Caja {
-    width: 30em;
     background: none;
     text-align: left;
+    width: 30em;
 }
 
 .ebooksSection4Img {
@@ -1111,8 +1116,8 @@ nav {
     justify-content: center;
 
     & img {
-        width: 80%;
         height: auto;
+        width: 80%;
     }
 }
 /* FIN SOBRE LOS EBOOKS */
@@ -1120,18 +1125,18 @@ nav {
 
 /* BENEFICIOS */
 .ebooksSection5 {
-    display: flex;
     align-items: center;
+    display: flex;
     padding: $padding-100;
 }
 
 .ebooksSection5Beneficio {
     @extend %flexbox-column;
-    justify-content: space-evenly;
     height: auto;
-    width: 100%;
+    justify-content: space-evenly;
     margin: 15px;
-    padding: 20px;
+    padding: 20px;    
+    width: 100%;
 }
 /* FIN BENEFICIOS */
 
@@ -1144,8 +1149,8 @@ nav {
 }
 
 .ebooksContactosRedes{
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: right;
 }
 /* FIN CONTACTOS */
@@ -1155,8 +1160,8 @@ nav {
 @media (max-width: 1024px) {
     .ebooksSection4Img {
         & img {
-            width: auto;
             height: 70%;
+            width: auto;
         }
     }
 }
@@ -1169,13 +1174,13 @@ nav {
 
     .ebooksSection2 {
         @include mobile-column;
-        width: auto;
         padding: $padding-100;
+        width: auto;
     }
 
     .ebooksSection2Producto {
-        width: auto;
         margin: 50px;
+        width: auto;
 
         & h3 {
             font-size: 2.3em;
@@ -1190,8 +1195,8 @@ nav {
         width: auto;
 
         & img {
-            width: 75%;
             height: auto;
+            width: 75%;
         }
     }
 
@@ -1238,8 +1243,8 @@ nav {
     }
 
     .ebooksSection2Producto {
-        width: fit-content;
         margin: 0 0 50px;
+        width: fit-content;
 
         & h3 {
             font-size: 1.7em;
@@ -1299,9 +1304,9 @@ nav {
     }
     
     & Img {
-        width: 25%;
         height: auto;
         margin: 15px;
+        width: 25%;
     }
 }
 /* FIN SOBRE NOSOTROS */
@@ -1309,10 +1314,10 @@ nav {
 
 /* BANNER */
 .nuestrainiciativaBanner {
+    background-color: $color-terciario;
     display: flex;
     justify-content: center;
-    padding: 50px 100px ;
-    background-color: $color-terciario;
+    padding: 50px 100px;
 
     & h3{
         color: $color-cuarto;
@@ -1328,11 +1333,11 @@ nav {
 }
 
 .nuestrainiciativaBannerBoton {
-    display: flex;
     align-items: center;
+    background-color: $color-terciario;
+    display: flex;
     justify-content: center;
     margin: 0 0 0 50px;
-    background-color: $color-terciario;
 }
 /* FIN BANNER */
 
@@ -1348,24 +1353,24 @@ nav {
     flex-flow: row wrap;
 
     & img {
-        width: 40%;
         height: auto;
+        width: 40%;
     }
 }
 
 .nuestrainiciativaSection4Equipo {
     @extend %flexbox-column;
-    width: 25rem;
+    border-radius: 0 0 60px 0;
+    box-shadow:  $box-shadow;
     margin: 30px;
     padding: 40px;
-    box-shadow:  $box-shadow;
-    border-radius: 0 0 60px 0;
+    width: 25rem;
 }
 
 .nuestrainiciativaSection4Cita {
-    text-align: left;
-    font-style: italic;
     font-size: 1em;
+    font-style: italic;
+    text-align: left;
 }
 /* FIN EQUIPO */
 
@@ -1373,10 +1378,10 @@ nav {
 /* BANNER 1 */
 .nuestrainiciativaBanner1 {
     @extend %flexbox-evenly;
+    background-color: $color-terciario;
     display: flex;
     justify-content: space-evenly;
     padding: 50px 100px;
-    background-color: $color-terciario;
 
     & h3 {
         color: white;
@@ -1400,8 +1405,8 @@ nav {
         padding: $padding-100;
 
         & img {
-            width: 30%;
             height: auto;
+            width: 30%;
         }
     }
     
@@ -1434,8 +1439,8 @@ nav {
 
     .nuestrainiciativaBanner1 {
         @include mobile-column;
-        text-align: center;
         padding: $padding-25;
+        text-align: center;
 
         & h3 {
             font-size: 1.5em;
@@ -1496,8 +1501,8 @@ nav {
 .hablamosSectionCaja {
     display: flex;
     flex-flow: column;
-    width: 40%;
     padding: 30px;
+    width: 40%;
 
     & h1 {
         font-size: 2em;
@@ -1505,12 +1510,12 @@ nav {
 }
 
 .hablamosSectionFormulario {
-    text-align: center;
-    width: 45%;
-    padding: 50px;
-    margin: 0 0 0 20px;
     border-radius: 0 0 70px 0;
     box-shadow: $box-shadow;
+    margin: 0 0 0 20px;
+    padding: 50px;
+    text-align: center;
+    width: 45%;
 
     & form {
         text-align: left;
@@ -1529,8 +1534,8 @@ nav {
 
     .hablamosSectionFormulario {
         flex-flow: column;
-        width: 100%;
         margin: 50px 0;
+        width: 100%;
     }
 }
 
@@ -1549,8 +1554,8 @@ nav {
 
 /* 404 */
 .Section404 {
-    text-align: center;
     padding: 200px 100px 100px;
+    text-align: center;
 }
 
 /* AJUSTE MOBILE */

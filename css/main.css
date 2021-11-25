@@ -32,13 +32,13 @@
   padding: 0; }
 
 h1, h2, h3, h4 {
+  background: none;
   font-family: 'Crimson Pro', serif;
-  font-weight: 900;
-  background: none; }
+  font-weight: 900; }
 
 p, li, a, form, input, q, button {
-  font-family: 'Poppins', sans-serif;
   background: none;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none; }
 
 a {
@@ -63,10 +63,10 @@ p, li, a, form, input, q, button {
 
 /* DIVISORES DE TEXTO-TÍTULO */
 .divisor {
+  background-color: #fd3d38;
   height: 4px;
-  width: 300px;
   margin: 15px 0px 30px 0px;
-  background-color: #fd3d38; }
+  width: 300px; }
 
 .divisor1 {
   height: 2px; }
@@ -78,17 +78,17 @@ p, li, a, form, input, q, button {
   height: 2px; }
 
 .divisor4 {
+  background-color: #0F0F18;
   display: inline-block;
   height: 1px;
-  width: 70px;
   margin: 7px 0px;
-  background-color: #0F0F18; }
+  width: 70px; }
 
 .divisor5 {
+  background-color: #fd3d38;
   display: inline-block;
   height: 170px;
-  width: 10px;
-  background-color: #fd3d38; }
+  width: 10px; }
 
 /* FIN DIVISORES DE TEXTO-TÍTULO */
 /* BOTONES */
@@ -99,8 +99,8 @@ p, li, a, form, input, q, button {
   border: 3px solid #fd3d38;
   border-radius: 3px; }
   .boton1 a {
-    font-size: 1.3em;
-    color: #ffff; }
+    color: #ffff;
+    font-size: 1.3em; }
 
 .boton2 {
   padding: 10px 20px;
@@ -109,15 +109,15 @@ p, li, a, form, input, q, button {
   border: none;
   border-radius: 3px; }
   .boton2 a {
-    font-size: 1.1em;
-    color: #ffff; }
+    color: #ffff;
+    font-size: 1.1em; }
 
 .boton3 {
-  margin: 25px 0;
-  border: none; }
+  border: none;
+  margin: 25px 0; }
   .boton3 a {
-    font-size: 1.2em;
-    color: #fd3d38; }
+    color: #fd3d38;
+    font-size: 1.2em; }
 
 .boton4 {
   padding: 8px 20px;
@@ -130,8 +130,8 @@ p, li, a, form, input, q, button {
 .boton5 {
   margin: 10px 0; }
   .boton5 a {
-    font-size: 1em;
-    color: #fd3d38; }
+    color: #fd3d38;
+    font-size: 1em; }
 
 .boton6 {
   padding: 10px 20px;
@@ -140,19 +140,19 @@ p, li, a, form, input, q, button {
   border: solid 3px #fd3d38;
   border-radius: 3px; }
   .boton6 a {
-    font-size: 1.2em;
-    color: #ffff; }
+    color: #ffff;
+    font-size: 1.2em; }
 
 /* FIN BOTONES */
 /* BODY */
 body {
-  width: 100%;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  width: 100%; }
 
 /* HEADER */
 .headerNav {
-  padding: 20px 50px;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  padding: 20px 50px; }
 
 .headerNavIcon {
   border: none; }
@@ -181,19 +181,19 @@ nav a {
 /* FIN BODY */
 /* FOOTER */
 .footer {
-  display: flex;
   align-items: center;
   background-color: #0F0F18;
+  display: flex;
   padding: 30px 100px; }
   .footer p {
+    color: #ffff;
     font-size: 3em;
-    font-weight: 800;
-    color: #ffff; }
+    font-weight: 800; }
 
 .footerRedessociales {
+  background: none;
   display: flex;
   justify-content: flex-end;
-  background: none;
   width: 100%; }
   .footerRedessociales a {
     margin: 0 0 0 15px; }
@@ -234,24 +234,24 @@ nav a {
 /* HOME */
 /* HEADER */
 .section1 {
-  display: flex;
   align-items: center;
-  justify-content: left;
   background-color: #f5f5f5;
+  display: flex;
   height: 900px;
+  justify-content: left;
   padding: 100px; }
 
 .section1Caja {
+  background: none;
   height: auto;
-  width: 43%;
-  background: none; }
+  width: 43%; }
 
 .section1Imagen {
   margin: 0 0 0 10%; }
 
 .Redes {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: flex-end;
   padding: 0 100px 0 0; }
   .Redes a {
@@ -266,60 +266,60 @@ nav a {
   padding: 10% 0 0 0; }
 
 .section2CajaProducto {
-  position: relative;
-  height: 31em;
-  width: 20em;
-  padding: 30px;
-  margin: 20px;
-  border-radius: 0 0 50px 0;
   background: #f5f5f5;
-  box-shadow: 20px 20px 60px #bebebe; }
+  border-radius: 0 0 50px 0;
+  box-shadow: 20px 20px 60px #bebebe;
+  height: 31em;
+  margin: 20px;
+  padding: 30px;
+  position: relative;
+  width: 20em; }
   .section2CajaProducto i {
-    color: #212032;
     background: none;
+    color: #212032;
     margin: 7px; }
   .section2CajaProducto p {
     color: #212032;
     margin: 7px; }
   .section2CajaProducto h4 {
-    font-size: 1.5rem;
     color: #212032;
+    font-size: 1.5rem;
     margin: 7px; }
   .section2CajaProducto p {
     color: #212032;
     margin: 7px; }
 
 .section2CajaProductoImg {
-  position: absolute;
-  transform: translate(-50%, -40%);
+  background: none;
   max-height: 100%;
   max-width: 85%;
-  background: none; }
+  position: absolute;
+  transform: translate(-50%, -40%); }
 
 .section2CajaProductoInfo {
+  background: none;
   position: absolute;
-  transform: translate(-10%, 100%);
-  background: none; }
+  transform: translate(-10%, 100%); }
 
 /* FIN PRODUCTOS DE LA TIENDA */
 /* PROPÓSITO */
 .section3 {
-  padding: 100px;
-  background-color: #0F0F18; }
+  background-color: #0F0F18;
+  padding: 100px; }
   .section3 h2 {
-    text-align: center;
-    color: #ffff; }
-  .section3 i {
     color: #ffff;
-    background: none; }
+    text-align: center; }
+  .section3 i {
+    background: none;
+    color: #ffff; }
   .section3 p {
     color: #ffff; }
 
 .section3Image {
-  max-height: 30%;
-  max-width: 30%;
+  background: none;
   margin: 50px 0 0 0;
-  background: none; }
+  max-height: 30%;
+  max-width: 30%; }
 
 /* FIN PROPÓSITO */
 /* CANAL YOUTUBE */
@@ -339,24 +339,24 @@ nav a {
   padding: 50px 0; }
 
 .section5CajaEquipo {
-  height: 25rem;
-  width: 19rem;
-  margin: 10px;
-  padding: 40px;
+  border-radius: 0 0 50px 0;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
-  border-radius: 0 0 50px 0; }
+  height: 25rem;
+  margin: 10px;
+  width: 19rem;
+  padding: 40px; }
   .section5CajaEquipo h4 {
     font-size: 1.4em;
     margin: 4px 0; }
   .section5CajaEquipo p {
     margin: 4px 0; }
   .section5CajaEquipo button {
-    border: none;
-    background: none; }
+    background: none;
+    border: none; }
 
 .section5CajaImg {
-  width: 150px;
-  height: 150px; }
+  height: 150px;
+  width: 150px; }
 
 /* FIN EQUIPO BRAINIALS */
 /* FORMULARIO DE CONTACTO */
@@ -365,29 +365,29 @@ nav a {
   padding: 100px; }
 
 .section6Contactos {
+  justify-content: space-evenly;
   margin: 0 100px 0 0;
-  width: 35em;
-  justify-content: space-evenly; }
+  width: 35em; }
 
 .section6Texto {
-  display: flex;
   align-items: center;
+  display: flex;
   margin: 0 0 20px 0; }
   .section6Texto p {
     font-size: 1.4em;
     font-weight: 600;
-    padding: 0 10px 0 0;
-    margin: 0; }
+    margin: 0;
+    padding: 0 10px 0 0; }
 
 .section6mail {
   font-weight: 300; }
 
 .section6Formulario {
-  text-align: center;
-  width: 45%;
-  padding: 50px;
+  border-radius: 0 0 70px 0;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
-  border-radius: 0 0 70px 0; }
+  padding: 50px;
+  text-align: center;
+  width: 45%; }
   .section6Formulario form {
     text-align: left; }
   .section6Formulario h4 {
@@ -397,9 +397,9 @@ nav a {
 /* AJUSTES HOME MOBILE */
 @media (max-width: 1024px) {
   .section1Caja {
+    background: none;
     height: auto;
-    width: 65%;
-    background: none; }
+    width: 65%; }
   .section1Caja h1 {
     font-size: 3em; }
   .section2CajaProducto {
@@ -427,14 +427,14 @@ nav a {
   .section1Imagen {
     align-items: center;
     height: 70%;
-    width: 70%;
-    margin: 0; }
+    margin: 0;
+    width: 70%; }
   .section1Caja {
-    width: 100%;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   .divisor {
-    width: 34%;
-    margin: 20px auto; }
+    margin: 20px auto;
+    width: 34%; }
   .Redes {
     display: flex;
     justify-content: center;
@@ -475,8 +475,8 @@ nav a {
     justify-content: center;
     padding: 100px; }
   .section6Contactos {
-    text-align: center;
     margin: 0 0 50px 0;
+    text-align: center;
     width: 100%; }
   .section6Texto {
     display: inline-block; }
@@ -499,8 +499,8 @@ nav a {
     .section1 h1 {
       font-size: 2.3em; }
   .section1Caja {
-    width: 100%;
-    margin: auto; }
+    margin: auto;
+    width: 100%; }
   .Redes {
     padding: 25px; }
   .section2 {
@@ -517,8 +517,8 @@ nav a {
   .section5 {
     padding: 25px; }
   .section5CajaEquipo {
-    padding: 15px;
     height: 22rem;
+    padding: 15px;
     width: 16rem; }
     .section5CajaEquipo h4 {
       font-size: 1.3em; }
@@ -547,14 +547,14 @@ nav a {
   padding: 100px; }
 
 .apoyarSection2Caja {
-  text-align: center;
   background-color: #fd3d38;
+  border-radius: 0 0 60px 0;
+  box-shadow: 20px 20px 60px #bebebe;
+  height: auto;
   margin: 15px;
   padding: 30px;
-  width: 28%;
-  height: auto;
-  border-radius: 0 0 60px 0;
-  box-shadow: 20px 20px 60px #bebebe; }
+  text-align: center;
+  width: 28%; }
   .apoyarSection2Caja h3 {
     color: #ffff; }
   .apoyarSection2Caja p {
@@ -563,9 +563,9 @@ nav a {
 /* FIN PORQUÉ APOYAR */
 /* CLUB BRAINAIALS */
 .apoyarSection3 {
-  padding: 100px 200px;
   background-color: #0F0F18;
-  color: #ffff; }
+  color: #ffff;
+  padding: 100px 200px; }
 
 .apoyarSection3Titulo {
   color: #ffff; }
@@ -575,22 +575,22 @@ nav a {
   width: 65%; }
 
 .apoyarSection3Club {
-  text-align: center;
   background-color: #fd3d38;
+  border-radius: 0 0 80px 0;
+  box-shadow: 20px 20px 60px #212032;
+  height: 28em;
   padding: 25px;
   width: 400px;
-  height: 28em;
-  border-radius: 0 0 80px 0;
-  box-shadow: 20px 20px 60px #212032; }
+  text-align: center; }
 
 .apoyarSection3ClubTitulo {
-  font-style: italic;
-  color: #ffff; }
+  color: #ffff;
+  font-style: italic; }
 
 .apoyarSection3ClubTexto {
+  color: #ffff;
   font-size: 3em;
-  font-weight: 800;
-  color: #ffff; }
+  font-weight: 800; }
 
 .colorboton2 {
   background-color: #ffff; }
@@ -598,16 +598,16 @@ nav a {
     color: #fd3d38; }
 
 .apoyarSection3ClubLista {
-  display: flex;
-  flex-flow: column wrap;
   align-content: center;
   background: none;
+  display: flex;
+  flex-flow: column wrap;
   padding: 0 0 20px 0; }
   .apoyarSection3ClubLista p {
-    display: block;
-    text-align: left;
     color: #ffff;
-    font-size: 1.2em; }
+    display: block;
+    font-size: 1.2em;
+    text-align: left; }
 
 .apoyarSection3Beneficios {
   align-items: center;
@@ -632,19 +632,19 @@ nav a {
   width: 100rem; }
 
 .apoyarSection4Button {
-  font-weight: 700;
-  font-size: 0.35em;
+  background-color: #ffff;
   color: #212032;
-  background-color: #ffff; }
+  font-weight: 700;
+  font-size: 0.35em; }
 
 .accordion-button:not(.collapsed) {
-  color: #fd3d38;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  color: #fd3d38; }
 
 .accordion-button:focus {
-  z-index: none;
   border-color: none;
-  box-shadow: none; }
+  box-shadow: none;
+  z-index: none; }
 
 .apoyarSection4Item {
   background-color: #ffff; }
@@ -707,8 +707,8 @@ nav a {
   .apoyarSection3ClubLista p {
     font-size: 1em; }
   .apoyarSection3Beneficios {
-    padding: 0;
-    margin: 40px 0; }
+    margin: 40px 0;
+    padding: 0; }
   .apoyarSection4 {
     padding: 25px 25px 75px; }
     .apoyarSection4 h2 {
@@ -731,10 +731,10 @@ nav a {
 
 .ebooksSection2Producto {
   height: auto;
-  width: 30%;
-  padding: 20px;
   border-radius: 10px;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff; }
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
+  padding: 20px;
+  width: 30%; }
   .ebooksSection2Producto h3 {
     font-size: 1.5em;
     margin: 10px 0; }
@@ -749,74 +749,74 @@ nav a {
 /* FIN PRODUCTOS */
 /* OFERTAS */
 .ebooksSection3 {
-  padding: 100px;
-  background-color: #0F0F18; }
+  background-color: #0F0F18;
+  padding: 100px; }
   .ebooksSection3 h2 {
     color: #ffff; }
 
 .ebooksSection3Oferta {
-  height: 40em;
-  width: 60em;
   background-color: #0F0F18;
-  border-radius: 3px; }
+  border-radius: 3px;
+  height: 40em;
+  width: 60em; }
   .ebooksSection3Oferta img {
-    width: 50%;
-    height: auto; }
+    height: auto;
+    width: 50%; }
   .ebooksSection3Oferta h3 {
     color: #ffff; }
   .ebooksSection3Oferta div {
-    display: flex;
     background-color: #0F0F18;
+    display: flex;
     padding: 0; }
 
 .ebooksSection3Rebaja {
+  background-color: #0F0F18;
+  color: #ffff;
   font-size: 1.5rem;
-  text-decoration: line-through;
+  margin: 0;
   justify-content: center;
   padding: 15px;
-  margin: 0;
-  color: #ffff;
-  background-color: #0F0F18; }
+  text-decoration: line-through; }
 
 .ebooksSection3Precio {
+  color: #ffff;
+  background-color: #0F0F18;
   font-size: 1.5rem;
   font-weight: 700;
   padding: 15px;
-  margin: 0;
-  color: #ffff;
-  background-color: #0F0F18; }
+  margin: 0; }
 
 /* FIN OFERTAS */
 /* SOBRE LOS EBOOKS */
 .ebooksSection4 {
-  padding: 100px;
-  align-items: center; }
+  align-items: center;
+  padding: 100px; }
 
 .ebooksSection4Caja {
-  width: 30em;
   background: none;
-  text-align: left; }
+  text-align: left;
+  width: 30em; }
 
 .ebooksSection4Img {
   display: flex;
   justify-content: center; }
   .ebooksSection4Img img {
-    width: 80%;
-    height: auto; }
+    height: auto;
+    width: 80%; }
 
 /* FIN SOBRE LOS EBOOKS */
 /* BENEFICIOS */
 .ebooksSection5 {
-  display: flex;
   align-items: center;
+  display: flex;
   padding: 100px; }
 
 .ebooksSection5Beneficio {
-  justify-content: space-evenly;
   height: auto;
-  width: 100%;
+  justify-content: space-evenly;
   margin: 15px;
-  padding: 20px; }
+  padding: 20px;
+  width: 100%; }
 
 /* FIN BENEFICIOS */
 /* CONTACTOS */
@@ -825,16 +825,16 @@ nav a {
   padding: 50px 100px; }
 
 .ebooksContactosRedes {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: right; }
 
 /* FIN CONTACTOS */
 /* AJUSTES MOBILE */
 @media (max-width: 1024px) {
   .ebooksSection4Img img {
-    width: auto;
-    height: 70%; } }
+    height: 70%;
+    width: auto; } }
 
 @media (max-width: 768px) {
   .ebooksSection1 {
@@ -844,11 +844,11 @@ nav a {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    width: auto;
-    padding: 100px; }
+    padding: 100px;
+    width: auto; }
   .ebooksSection2Producto {
-    width: auto;
-    margin: 50px; }
+    margin: 50px;
+    width: auto; }
     .ebooksSection2Producto h3 {
       font-size: 2.3em; }
     .ebooksSection2Producto p {
@@ -856,8 +856,8 @@ nav a {
   .ebooksSection3Oferta {
     width: auto; }
     .ebooksSection3Oferta img {
-      width: 75%;
-      height: auto; }
+      height: auto;
+      width: 75%; }
   .ebooksSection4 {
     display: flex;
     flex-flow: column;
@@ -891,8 +891,8 @@ nav a {
   .ebooksSection2 {
     padding: 25px; }
   .ebooksSection2Producto {
-    width: fit-content;
-    margin: 0 0 50px; }
+    margin: 0 0 50px;
+    width: fit-content; }
     .ebooksSection2Producto h3 {
       font-size: 1.7em; }
     .ebooksSection2Producto p {
@@ -925,17 +925,17 @@ nav a {
     line-height: 2rem;
     margin: 10px 0 40px; }
   .nuestrainiciativaSection2 Img {
-    width: 25%;
     height: auto;
-    margin: 15px; }
+    margin: 15px;
+    width: 25%; }
 
 /* FIN SOBRE NOSOTROS */
 /* BANNER */
 .nuestrainiciativaBanner {
+  background-color: #0F0F18;
   display: flex;
   justify-content: center;
-  padding: 50px 100px;
-  background-color: #0F0F18; }
+  padding: 50px 100px; }
   .nuestrainiciativaBanner h3 {
     color: #ffff; }
   .nuestrainiciativaBanner p {
@@ -945,11 +945,11 @@ nav a {
   background-color: #0F0F18; }
 
 .nuestrainiciativaBannerBoton {
-  display: flex;
   align-items: center;
+  background-color: #0F0F18;
+  display: flex;
   justify-content: center;
-  margin: 0 0 0 50px;
-  background-color: #0F0F18; }
+  margin: 0 0 0 50px; }
 
 /* FIN BANNER */
 /* EQUIPO */
@@ -959,28 +959,28 @@ nav a {
 .nuestrainiciativaSection4Caja {
   flex-flow: row wrap; }
   .nuestrainiciativaSection4Caja img {
-    width: 40%;
-    height: auto; }
+    height: auto;
+    width: 40%; }
 
 .nuestrainiciativaSection4Equipo {
-  width: 25rem;
+  border-radius: 0 0 60px 0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
   margin: 30px;
   padding: 40px;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
-  border-radius: 0 0 60px 0; }
+  width: 25rem; }
 
 .nuestrainiciativaSection4Cita {
-  text-align: left;
+  font-size: 1em;
   font-style: italic;
-  font-size: 1em; }
+  text-align: left; }
 
 /* FIN EQUIPO */
 /* BANNER 1 */
 .nuestrainiciativaBanner1 {
+  background-color: #0F0F18;
   display: flex;
   justify-content: space-evenly;
-  padding: 50px 100px;
-  background-color: #0F0F18; }
+  padding: 50px 100px; }
   .nuestrainiciativaBanner1 h3 {
     color: white;
     margin: 0 30px 0 0; }
@@ -993,8 +993,8 @@ nav a {
   .nuestrainiciativaSection2 {
     padding: 100px; }
     .nuestrainiciativaSection2 img {
-      width: 30%;
-      height: auto; }
+      height: auto;
+      width: 30%; }
   .nuestrainiciativaBanner {
     display: flex;
     flex-flow: column;
@@ -1021,8 +1021,8 @@ nav a {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 25px; }
+    padding: 25px;
+    text-align: center; }
     .nuestrainiciativaBanner1 h3 {
       font-size: 1.5em;
       margin: 0; } }
@@ -1057,18 +1057,18 @@ nav a {
 .hablamosSectionCaja {
   display: flex;
   flex-flow: column;
-  width: 40%;
-  padding: 30px; }
+  padding: 30px;
+  width: 40%; }
   .hablamosSectionCaja h1 {
     font-size: 2em; }
 
 .hablamosSectionFormulario {
-  text-align: center;
-  width: 45%;
-  padding: 50px;
-  margin: 0 0 0 20px;
   border-radius: 0 0 70px 0;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff; }
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffff;
+  margin: 0 0 0 20px;
+  padding: 50px;
+  text-align: center;
+  width: 45%; }
   .hablamosSectionFormulario form {
     text-align: left; }
 
@@ -1083,8 +1083,8 @@ nav a {
     width: fit-content; }
   .hablamosSectionFormulario {
     flex-flow: column;
-    width: 100%;
-    margin: 50px 0; } }
+    margin: 50px 0;
+    width: 100%; } }
 
 @media (max-width: 480px) {
   .hablamosSection {
@@ -1096,8 +1096,8 @@ nav a {
 /* FIN HABLAMOS */
 /* 404 */
 .Section404 {
-  text-align: center;
-  padding: 200px 100px 100px; }
+  padding: 200px 100px 100px;
+  text-align: center; }
 
 /* AJUSTE MOBILE */
 @media (max-width: 480px) {
